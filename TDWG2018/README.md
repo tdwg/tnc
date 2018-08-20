@@ -106,7 +106,7 @@ This workshop will aim for consensus around the idea that we can work together w
 - TaxRef
 - +++
 
-## Strategy?
+## Strategy / Way Forward?
 
 - **A new standard or update/replace/extend existing standards?**
 
