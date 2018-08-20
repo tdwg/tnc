@@ -15,13 +15,13 @@ This workshop will aim for consensus around the idea that we can work together w
 ## Goals
 
 1.  Reconvene the [Taxonomic Names and Concepts Interest Group](https://www.tdwg.org/community/tnc/)
-      - Membership
-      - GitHub, [tdwg/tnc](https://github.com/tdwg/tnc)
-      - Standards maintenance.
+    - Membership
+    - GitHub, [tdwg/tnc](https://github.com/tdwg/tnc)
+    - Standards maintenance.
 2.  Agreement on a plan for a replacement of the **Taxonomic Concept Transfer Schema (TCS)** that:
-      - is compliant with the TDWG [Standards Documentation Standard](https://github.com/tdwg/vocab/tree/master/sds) and [Vocabulary Maintenance Standard](https://github.com/tdwg/vocab/tree/master/vms).
-      - provides for the needs of the various types of users and use cases of Taxonomic Names in the biodiversity informatics space
-      - as much as possible synthesises and takes benefit of the work that has been done in the TDWG community so far.
+    - is compliant with the TDWG [Standards Documentation Standard](https://github.com/tdwg/vocab/tree/master/sds) and [Vocabulary Maintenance Standard](https://github.com/tdwg/vocab/tree/master/vms).
+    - provides for the needs of the various types of users and use cases of Taxonomic Names in the biodiversity informatics space
+    - as much as possible synthesises and takes benefit of the work that has been done in the TDWG community so far.
 
 ##  Uses / Stakeholders
 
