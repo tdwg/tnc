@@ -121,7 +121,7 @@ A Domain Model?
    
 A new standard or update/replace/extend existing standards?
 
-Restart with ideas in **Linnean Core** (J.Cooper)
+Restart with ideas in [**Linnean Core**](https://github.com/tdwg/tnc/blob/master/TDWG2018/linnean-core-definitions.md) (J.Cooper)
 - A Basic vocabulary for the interchange and use of Taxonomic Names and "names".
 - Darwin Core  extensions    NFB  < TCS.
 - Controlled vocabularies!
