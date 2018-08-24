@@ -80,7 +80,7 @@ Darwin Core ambiguous
   - Overloaded usage.
   - Classification terms.
   - Ranks.
-  - Path to RDF …
+  - Path to RDF … 
 
 Many different application profiles 
   - Simple vocabulary required.
@@ -90,6 +90,11 @@ A Domain Model?
   - Classes
   - Code compliance
 
+Linked Data
+  - RDF
+  - JSON-LD
+  - schema.org
+  
 ???
 
 ## Previous Work !
@@ -167,8 +172,9 @@ Restart with ideas in [**Linnean Core**](https://github.com/tdwg/tnc/blob/master
 - Obey the the TDWG laws for standards and vocabularies
 - Independent of serialization
 - Concise vocabulary
-- RDF support
-  - Application Profiles
+- Linked Data
+  -  Shared vocabulary 
+  -  Application Profiles
   -  Simple enough for …. Anything
 
 ## Terminology 
