@@ -201,7 +201,7 @@ Restart with ideas in [**Linnean Core**](https://github.com/tdwg/tnc/blob/master
    
    - https://github.com/pensoft/OpenBiodiv
    
-   [**Catalogue of Life Plus (CoL+)**](https://github.com/Sp2000/colplus]
+   [**Catalogue of Life Plus (CoL+)**](https://github.com/Sp2000/colplus)
    
    [**TAXREF**](https://inpn.mnhn.fr/programme/referentiel-taxonomique-taxref)
    
