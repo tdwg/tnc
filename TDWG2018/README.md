@@ -207,7 +207,7 @@ Restart with ideas in [**Linnean Core**](https://github.com/tdwg/tnc/blob/master
    
    [**NSL**](https://biodiversity.org.au/nsl)
    
-   - https://github.com/bio-org-au
+   https://github.com/bio-org-au
 
    Bibliographic pattern:  Where a name is found and how it is used in that place.
 
