@@ -195,7 +195,19 @@ Restart with ideas in [**Linnean Core**](https://github.com/tdwg/tnc/blob/master
 
    A **taxon** is a reusable branch or leaf of a *taxonomic tree*.
 
-## NSL Example [todo]
+## Examples [todo]
+
+   [**OpenBiodiv-O**](https://static-content.springer.com/esm/art%3A10.1186%2Fs13326-017-0174-5/MediaObjects/13326_2017_174_MOESM1_ESM.txt)
+   
+   - https://github.com/pensoft/OpenBiodiv
+   
+   [**TAXREF**](https://inpn.mnhn.fr/programme/referentiel-taxonomique-taxref)
+   
+   - https://github.com/frmichel/taxref-ld 
+   
+   [**NSL**](https://biodiversity.org.au/nsl)
+   
+   - https://github.com/bio-org-au
 
    Bibliographic pattern:  Where a name is found and how it is used in that place.
 
