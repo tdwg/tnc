@@ -13,13 +13,13 @@
 ## Goals
 
 1. Reconvene the [Taxonomic Names and Concepts Interest Group](https://www.tdwg.org/community/tnc/)
-	* Membership
-	* GitHub, [tdwg/tnc](https://github.com/tdwg/tnc)
-	* Standards maintenance.
+	- Membership
+	- GitHub, [tdwg/tnc](https://github.com/tdwg/tnc)
+	- Standards maintenance.
 2. Agreement on a plan for a replacement of the **Taxonomic Concept Transfer Schema (TCS)** that:
-	* is compliant with the TDWG [Standards Documentation Standard](https://github.com/tdwg/vocab/tree/master/sds) and [Vocabulary Maintenance Standard](https://github.com/tdwg/vocab/tree/master/vms).
-	* provides for the needs of the various types of users and use cases of Taxonomic Names in the biodiversity informatics space
-	* as much as possible synthesises and takes benefit of the work that has been done in the TDWG community so far.
+	- is compliant with the TDWG [Standards Documentation Standard](https://github.com/tdwg/vocab/tree/master/sds) and [Vocabulary Maintenance Standard](https://github.com/tdwg/vocab/tree/master/vms).
+	- provides for the needs of the various types of users and use cases of Taxonomic Names in the biodiversity informatics space
+	- as much as possible synthesises and takes benefit of the work that has been done in the TDWG community so far.
 
 ## Uses / Stakeholders
 
@@ -31,29 +31,26 @@
 
 ## Current standards
 
--  [**Taxonomic Concept Transfer Schema (TCS)**](https://www.tdwg.org/standards/tcs/)
-
-    	  *TCS 1.01 Schema Documentation* can be found at http://tdwg.github.io/tcs/schema/1.01
-
--   [**Darwin Core**](https://www.tdwg.org/standards/dwc/)
-
-    	  *Darwin Core* terms can be found at http://tdwg.github.io/dwc/terms/
+- [**Taxonomic Concept Transfer Schema (TCS)**](https://www.tdwg.org/standards/tcs/)
+  - *TCS 1.01 Schema Documentation* can be found at http://tdwg.github.io/tcs/schema/1.01
+- [**Darwin Core**](https://www.tdwg.org/standards/dwc/)
+  - *Darwin Core* terms can be found at http://tdwg.github.io/dwc/terms/
 
 ## Issues
 
- Expectation reversal, but
+Expectation reversal, but
 
-  - Taxa **change**
-     - AFD = taxonomic (opinion) product, not a Nomenclator, not a taxon store.
+- Taxa **change**
+  - AFD = taxonomic (opinion) product, not a Nomenclator, not a taxon store.
 		- @rdmpage:  WTAF
   - Taxonomic Names are **stable.**
   - Inappropriate use of taxon.
 
- No "Names" standard.
+No "Names" standard.
 
-  - Darwin Core RDF Guide recommends separate vocabulary.
-   - Ad hoc Darwin Core extensions.
-   - Inappropriate use of the taxonomic concept
+- Darwin Core RDF Guide recommends separate vocabulary.
+  - Ad hoc Darwin Core extensions.
+  - Inappropriate use of the taxonomic concept
 
 TCS
 
@@ -65,10 +62,8 @@ TCS
   - Over engineered for normal usage
   - Relationship object
     - Path to RDF, JSON-LD
-    
-> How does tcs:TaxonConcept relate to dwc:Taxon?
-
-> How does tcs:TaxonConcept relate to NameUsage and nsl:Instance?
+  - How does tcs:TaxonConcept relate to dwc:Taxon?
+  - How does tcs:TaxonConcept relate to NameUsage and nsl:Instance?
 
 Darwin Core ambiguous
 
@@ -80,7 +75,7 @@ Darwin Core ambiguous
 - Ranks.
 - Path to RDF
 
-Many different application profiles 
+Many different application profiles
   - Simple vocabulary required.
 
 A Domain Model?
@@ -92,10 +87,10 @@ Linked Data
   - RDF
   - JSON-LD
   - schema.org
-  
+
 ???
 
-## Previous Work !
+## Previous Work
 
    * **Bisby**
    * APNI
@@ -121,7 +116,7 @@ Linked Data
    * +++
 
 ## Strategy / Way Forward?
-   
+
 A new standard or update/replace/extend existing standards?
 
 Restart with ideas in [**Linnean Core**](https://github.com/tdwg/tnc/blob/master/TDWG2018/linnean-core-definitions.md) (J.Cooper)
@@ -141,14 +136,14 @@ Restart with ideas in [**Linnean Core**](https://github.com/tdwg/tnc/blob/master
 - Normative or Guide?
 - API specification for:
 	- Name
-	- Instance (name occurrence) according 
+	- Instance (name occurrence) according
 	- Usage ( potential/taxonomic concept)
 	- Taxon
 	- Taxonomic Tree ?
 	- Arrangement
 
 ## What are we looking for in a Name standard/vocabulary?
-   
+
 - (Core competencies / Functional Requirements / Use cases)
 - Generic metadata model
 	- Vocabularies
@@ -167,109 +162,111 @@ Restart with ideas in [**Linnean Core**](https://github.com/tdwg/tnc/blob/master
   - Common interchange format
   - Support for publication
   - Extensible
-- Obey the the TDWG laws for standards and vocabularies
+- Obey the TDWG laws for standards and vocabularies
 - Independent of serialization
 - Concise vocabulary
 - Linked Data
-  -  Shared vocabulary 
+  -  Shared vocabulary
   -  Application Profiles
   -  Simple enough for …. Anything
 
-## Terminology 
+## Terminology
 
-  **Some core concepts**
+**Some core concepts**
 
-   A **name** is a "name", a designation, a label, a string used as a name: in any context.
+A **name** is a "name", a designation, a label, a string used as a name: in any context.
 
-   A **taxonomic name** is a *name* used in a taxonomic context; often a scientific name formulated (or attempted to be) according to some rules of nomenclature.
+A **taxonomic name** is a *name* used in a taxonomic context; often a scientific name formulated (or attempted to be) according to some rules of nomenclature.
 
-   A **reference** is a citable work: a publication, a resource, ...
+A **reference** is a citable work: a publication, a resource, ...
 
-   A **taxonomic name instance** is the occurrence of a name in a *reference*. A fact.  One usage of a *taxonomic name* establishing context: establishment of a name, a concept, a synonym, an assertion, a relationship; tax. nov., comb.nov., … , a misapplication, or assertion; a common name.
+A **taxonomic name instance** is the occurrence of a name in a *reference*. A fact.  One usage of a *taxonomic name* establishing context: establishment of a name, a concept, a synonym, an assertion, a relationship; tax. nov., comb.nov., … , a misapplication, or assertion; a common name.
 
-   A **taxonomic concept** is a collection of *taxonomic name instances*,  establishing or circumscribing a taxonomic entity, a ***taxonomic name usage*** - often linking synonymic inclusions and adding annotations, description…
+A **taxonomic concept** is a collection of *taxonomic name instances*,  establishing or circumscribing a taxonomic entity, a ***taxonomic name usage*** - often linking synonymic inclusions and adding annotations, description…
 
-   A **taxonomic tree** is a hierarchical arrangement of *taxonomic concepts*
+A **taxonomic tree** is a hierarchical arrangement of *taxonomic concepts*
 
-   A **taxon** is a reusable branch or leaf of a *taxonomic tree*.
-   
-   A **taxonomic arrangement** or named tree is a collection of taxa. A classification, checklist, Flora or Fauna.
+A **taxon** is a reusable branch or leaf of a *taxonomic tree*.
 
-           Note: In a Names standard ‘scientific name’ is a type of taxonomic name rather than a property of a Taxon.
+A **taxonomic arrangement** or named tree is a collection of taxa. A classification, checklist, Flora or Fauna.
+
+> **Note:** In a Names standard ‘scientific name’ is a type of taxonomic name rather than a property of a Taxon.
 
 ## Examples [todo]
 
-   [**OpenBiodiv-O**](https://static-content.springer.com/esm/art%3A10.1186%2Fs13326-017-0174-5/MediaObjects/13326_2017_174_MOESM1_ESM.txt)
-   
-   - https://github.com/pensoft/OpenBiodiv
-   
-   [**Catalogue of Life Plus (CoL+)**](https://github.com/Sp2000/colplus)
-   
-   [**TAXREF**](https://inpn.mnhn.fr/programme/referentiel-taxonomique-taxref)
-   
-   - https://github.com/frmichel/taxref-ld 
-   
-   [**NSL**](https://biodiversity.org.au/nsl)
-   
-   https://github.com/bio-org-au
+[**OpenBiodiv-O**](https://static-content.springer.com/esm/art%3A10.1186%2Fs13326-017-0174-5/MediaObjects/13326_2017_174_MOESM1_ESM.txt)
 
-   Bibliographic pattern:  Where a name is found and how it is used in that place.
+  - https://github.com/pensoft/OpenBiodiv
 
-   - Every taxonomic name instance.
+[**Catalogue of Life Plus (CoL+)**](https://github.com/Sp2000/colplus)
+
+[**TAXREF**](https://inpn.mnhn.fr/programme/referentiel-taxonomique-taxref)
+
+  - https://github.com/frmichel/taxref-ld
+
+[**NSL**](https://biodiversity.org.au/nsl)
+
+https://github.com/bio-org-au
+
+Bibliographic pattern:  Where a name is found and how it is used in that place.
+
+  - Every taxonomic name instance.
     -Just about names and taxa:
-        - Authors, References detail elsewhere -  external resources
+      - Authors, References detail elsewhere -  external resources
 
-   Model (sketch)
-	       
-          * Name
-	         * Name Strings
-	         * Code
-	         * Type of name (scientific, vernacular, informal, cultivar…)
-	         * Rank !
-	         * Status !
-	         * Authorship
-	         * Primary reference ( incl. basionym) !
-	       * Reference
-	         * Type of reference !
-	         * Part of Reference !
-	         * dc:title, dc:creator, dc:created:...
-		 * CitedAs
-	         * External resource !
-	       * Instance
-	         * Type of instance !
-	         * Name !
-	         * Reference !
-	         * Page citation
-	         * Citing instance !
-	         * Cited instance !
-	         * Taxon
-	         * Instance !
-		 * Parent taxon !
-		 * Included taxa !
-		   * Taxon !
-		     * Taxon !
-		       * ...
-	         * Annotations
-	         * Profile
-	         * Taxonomic arrangement
-	         * Root
-	           * Taxon !
-	        * Vocabularies
-	          * Code of Nomenclature
-	          * Status of a Name
-	          * Code !
-	          * Status
-	          * Description
-	          * Type of Name
-	          * Type of Instance (usage/relationship)
-	          * The system of Name Ranks
-	          * Type of Reference
-	          * Type of external Resource
-	          * Type of taxon
-		  * Type of arrangement
+## Model (sketch)
+
+```
+* Name
+  * Name Strings
+  * Code
+  * Type of name (scientific, vernacular, informal, cultivar…)
+  * Rank !
+  * Status !
+  * Authorship
+  * Primary reference ( incl. basionym) !
+* Reference
+  * Type of reference !
+  * Part of Reference !
+  * dc:title, dc:creator, dc:created:...
+* CitedAs
+  * External resource !
+* Instance
+  * Type of instance !
+  * Name !
+  * Reference !
+  * Page citation
+  * Citing instance !
+  * Cited instance !
+  * Taxon
+  * Instance !
+  * Parent taxon !
+  * Included taxa !
+    * Taxon !
+      * Taxon !
+        * ...
+* Annotations
+* Profile
+* Taxonomic arrangement
+* Root
+  * Taxon !
+* Vocabularies
+  * Code of Nomenclature
+  * Status of a Name
+  * Code !
+  * Status
+  * Description
+  * Type of Name
+  * Type of Instance (usage/relationship)
+  * The system of Name Ranks
+  * Type of Reference
+  * Type of external Resource
+  * Type of taxon
+  * Type of arrangement
+```
 
 ## Changes to Darwin Core?
-		
+
 Appropriateness
 - RDF Guide
 - "Convenience terms"
