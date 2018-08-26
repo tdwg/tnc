@@ -62,22 +62,23 @@ TCS
   - Interchange of literature based concept definitions
 - Difficult to distill, harder to extend.
   - Syntax (XML) → path to RDF … JSON.
-  - Over engineered for normal usage:)
+  - Over engineered for normal usage
   - Relationship object
-    -  Path to RDF, JSON-LD
-  > How does tcs:TaxonConcept relate to dwc:Taxon?
+    - Path to RDF, JSON-LD
+    
+> How does tcs:TaxonConcept relate to dwc:Taxon?
 
-  > How does tcs:TaxonConcept relate to NameUsage and nsl:Instance?
+> How does tcs:TaxonConcept relate to NameUsage and nsl:Instance?
 
 Darwin Core ambiguous
 
-  - Overloaded definitions
-    - Many interpretations.
-  - Overloaded usage.
-  - Classification terms.
-  - Hybrids
-  - Ranks.
-  - Path to RDF … 
+- Overloaded definitions
+  - Many interpretations.
+- Overloaded usage.
+- Classification terms.
+- Hybrids
+- Ranks.
+- Path to RDF
 
 Many different application profiles 
   - Simple vocabulary required.
