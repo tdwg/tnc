@@ -195,6 +195,10 @@ Restart with ideas in [**Linnean Core**](https://github.com/tdwg/tnc/blob/master
    A **taxonomic tree** is a hierarchical arrangement of *taxonomic concepts*
 
    A **taxon** is a reusable branch or leaf of a *taxonomic tree*.
+   
+   A **taxonomic arrangement** or named tree is a collection of taxa. A classification, checklist, Flora or Fauna.
+
+           Note: In a Names standard ‘scientific name’ is a type of taxonomic name rather than a property of a Taxon.
 
 ## Examples [todo]
 
