@@ -187,7 +187,7 @@ Restart with ideas in [**Linnean Core**](https://github.com/tdwg/tnc/blob/master
 
    A **taxonomic name instance** is the occurrence of a name in a *reference*. A fact.  One usage of a *taxonomic name* establishing context: establishment of a name, a concept, a synonym, an assertion, a relationship; tax. nov., comb.nov., … , a misapplication, or assertion; a common name.
 
-   A **taxonomic concept** is a collection of *taxonomic name instances*,  establishing or circumscribing a taxonomic entity, a ***taxonomic name usage*** - often linking synonymic inclusions and adding annotations, description…
+   A **taxonomic concept** is a collection of *taxonomic name instances*,  establishing or circumscribing a taxonomic entity, a *taxonomic name usage* - often linking synonymic inclusions and adding annotations, description…
 
    A **taxonomic tree** is a hierarchical arrangement of *taxonomic concepts*
 
