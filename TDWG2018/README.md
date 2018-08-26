@@ -57,17 +57,17 @@
 
 TCS
 
-   - Application Schema rather than Standard
-     - Designed to exchange with systems that look like TCS; not general information exchange
-     - Interchange of literature based concept definitions
-   - Difficult to distill, harder to extend.
-   - Syntax (XML) → path to RDF … JSON.
-   - Over engineered for normal usage:)
-   - Relationship object
-     -  Path to RDF, JSON-LD
-> How does tcs:TaxonConcept relate to dwc:Taxon?
+- Application Schema rather than Standard
+  - Designed to exchange with systems that look like TCS; not general information exchange
+  - Interchange of literature based concept definitions
+- Difficult to distill, harder to extend.
+  - Syntax (XML) → path to RDF … JSON.
+  - Over engineered for normal usage:)
+  - Relationship object
+    -  Path to RDF, JSON-LD
+  > How does tcs:TaxonConcept relate to dwc:Taxon?
 
-> How does tcs:TaxonConcept relate to NameUsage and nsl:Instance?
+  > How does tcs:TaxonConcept relate to NameUsage and nsl:Instance?
 
 Darwin Core ambiguous
 
