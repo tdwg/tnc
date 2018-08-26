@@ -55,12 +55,8 @@
    - Ad hoc Darwin Core extensions.
    - Inappropriate use of the taxonomic concept
 
- TCS
+TCS
 
-   - XML too esoteric:
-     - Okay at the enterprise level
-	- Not being used, or ...
-	- used anyway.
    - Application Schema rather than Standard
      - Designed to exchange with systems that look like TCS; not general information exchange
      - Interchange of literature based concept definitions
@@ -68,11 +64,9 @@
    - Syntax (XML) → path to RDF … JSON.
    - Over engineered for normal usage:)
    - Relationship object
-	   -  Path to RDF, JSON-LD
-
-    			    How does tcs:TaxonConcept relate to dwc:Taxon?
-
-    			    How does tcs:TaxonConcept relate to NameUsage and nsl:Instance?
+     -  Path to RDF, JSON-LD
+> How does tcs:TaxonConcept relate to dwc:Taxon?
+> How does tcs:TaxonConcept relate to NameUsage and nsl:Instance?
 
 Darwin Core ambiguous
 
