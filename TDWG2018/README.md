@@ -28,6 +28,7 @@
 - Floras, Faunas etc.
 - Systems that capture historical (as well as current) name usages: NSL, APNI, AFD
 - Systems that try to capture phylogenetic relationships
+- Entire TDWG community: everybody needs taxa for something
 
 ## Current standards
 
