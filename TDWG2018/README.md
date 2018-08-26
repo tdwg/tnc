@@ -61,7 +61,8 @@
      - Okay at the enterprise level
 	- Not being used, or ...
 	- used anyway.
-   - Application schema
+   - Application Schema rather than Standard
+     - Designed to exchange with systems that look like TCS; not general information exchange
      - Interchange of literature based concept definitions
    - Difficult to distill, harder to extend.
    - Syntax (XML) → path to RDF … JSON.
