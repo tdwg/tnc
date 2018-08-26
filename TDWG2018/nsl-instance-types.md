@@ -1,4 +1,10 @@
-# NSL Instance Types
+
+# Instance Types
+
+## openBiodiv Taconomic and Nomenclatural Status Terms
+- https://github.com/pensoft/OpenBiodiv/blob/master/ontology/contrib/taxonomic_nomenclatural_status_terms.owl
+
+## NSL Instance Types
 
 name|primary_instance|protologue|secondary_instance|standalone|relationship|nomenclatural|taxonomic|synonym|pro_parte|doubtful|misapplied|bidirectional|unsourced
 ---|---|---|---|---|---|---|---|---|---|---|---|---|---
