@@ -66,6 +66,7 @@ TCS
    - Relationship object
      -  Path to RDF, JSON-LD
 > How does tcs:TaxonConcept relate to dwc:Taxon?
+
 > How does tcs:TaxonConcept relate to NameUsage and nsl:Instance?
 
 Darwin Core ambiguous
