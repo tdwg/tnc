@@ -86,6 +86,7 @@ A Domain Model?
   - Contract -> Ontology
 
 Open Linked Data ++
+  - **Identifiers**
   - knowledge graph
   - RDF, JSON-LD
   - schema.org
