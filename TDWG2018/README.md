@@ -81,8 +81,8 @@ Many different application profiles
 
 A Domain Model?
   - Agreement on definitions
-  - Classes
   - Code compliance
+  - Contract -> Ontology
 
 Open Linked Data ++
   - knowledge graph
