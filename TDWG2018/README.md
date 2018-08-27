@@ -88,9 +88,10 @@ Open Linked Data ++
   - knowledge graph
   - RDF, JSON-LD
   - schema.org
-  - SHACL, GraphQL
   
 Services
+  - REST
+  - SHACL, GraphQL
 
 ???
 
