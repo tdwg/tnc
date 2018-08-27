@@ -177,7 +177,7 @@ Restart with ideas in [**Linnean Core**](https://github.com/tdwg/tnc/blob/master
 
 ## Terminology
 
-**Some core concepts**
+**Some core "concepts"**
 
 A **name** is a "name", a designation, a label, a string used as a name: in any context.
 
