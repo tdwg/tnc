@@ -239,18 +239,18 @@ Bibliographic pattern:  Where a name is found and how it is used in that place.
   * Page citation
   * Citing instance !
   * Cited instance !
-  * Taxon
+* Taxon
   * Instance !
   * Parent taxon !
   * Included taxa !
     * Taxon !
       * Taxon !
         * ...
-* Annotations
-* Profile
+  * Annotations
+  * Profile
 * Taxonomic arrangement
-* Root
-  * Taxon !
+  * Root
+    * Taxon !
 * Vocabularies
   * Code of Nomenclature
   * Status of a Name
