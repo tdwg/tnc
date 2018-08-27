@@ -66,8 +66,9 @@ TCS
   - How does tcs:TaxonConcept relate to dwc:Taxon?
   - How does tcs:TaxonConcept relate to NameUsage and nsl:Instance?
 
-Darwin Core ambiguous
+Darwin Core 
 
+- Ambiguous wrt names
 - Overloaded definitions
   - Many interpretations.
 - Overloaded usage.
