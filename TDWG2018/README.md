@@ -188,7 +188,7 @@ A **taxonomic name instance** is the occurrence of a name in a *reference*. A fa
 
 A **taxonomic concept** is a collection of *taxonomic name instances*,  establishing or circumscribing a taxonomic entity, a *taxonomic name usage* - often linking synonymic inclusions and adding annotations, description… 
 
-- issue#1:[taxon concept vs concept label](https://github.com/tdwg/tnc/issues/1#issue-354177308)
+- issue#1: [taxon concept vs concept label](https://github.com/tdwg/tnc/issues/1#issue-354177308)
 
 A **taxonomic tree** is a hierarchical arrangement of *taxonomic concepts*
 
