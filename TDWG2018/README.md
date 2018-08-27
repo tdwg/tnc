@@ -92,8 +92,8 @@ Open Linked Data ++
   - schema.org
   
 Services
-  - REST
-  - SHACL, GraphQL
+  - [REST](https://www.w3.org/TR/2004/NOTE-ws-arch-20040211/#relwwwrest) (and [here](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm))
+  - [SHACL](https://www.w3.org/TR/shacl/), [GraphQL](https://graphql.org/learn/)
 
 ???
 
