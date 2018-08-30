@@ -3,7 +3,9 @@ Taxonomic Names and Concepts Interest Group
 
 ## Convenor
 Niels Klazenga
+
 Royal Botanic Gardens Victoria, Australia
+
 Niels.Klazenga&commat;rbg.vic.gov.au
 
 ## Motivation
