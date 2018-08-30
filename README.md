@@ -2,13 +2,9 @@
 Taxonomic Names and Concepts Interest Group
 
 ## Convenor
-Richard L. Pyle  
-Database Coordinator for Natural Sciences and  
-Associate Zoologist in Ichthyology Department of Natural Sciences, Bishop Museum  
-1525 Bernice St., Honolulu, HI 96817  
-Phone: +1-808-848-4115, Fax: +1-808-847-8252  
-email: deepreef(at)bishopmuseum.org  
-web: http://hbs.bishopmuseum.org/staff/pylerichard.html  
+Niels Klazenga
+Royal Botanic Gardens Victoria, Australia
+Niels.Klazenga&commat;rbg.vic.gov.au
 
 ## Motivation
 The aim of the Taxon Names and Concepts (TNC) group is to promote the understanding of taxonomic names and their relation to described taxa (taxon concepts). Taxonomic names and concepts are the fundamental units for communicating biological information. This group promotes the effective use of taxonomic names and concepts in biodiversity information for describing specimens and observations.
