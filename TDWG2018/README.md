@@ -245,7 +245,7 @@ Bibliographic pattern:  Where a name is found and how it is used in that place.
   * Type of reference !
   * Part of Reference !
   * dc:title, dc:creator, dc:created:...
-* CitedAs
+  * CitedAs
   * External resource !
 * Instance
   * Type of instance !
