@@ -152,8 +152,8 @@ Restart with ideas in [**Linnean Core**](https://github.com/tdwg/tnc/blob/master
 	- Arrangement
 
 ## What are we looking for in a Name standard/vocabulary?
+**(Core competencies / Functional Requirements / Use cases)**
 
-- (Core competencies / Functional Requirements / Use cases)
 - Generic metadata model
 	- Vocabularies
 - Full Code support
