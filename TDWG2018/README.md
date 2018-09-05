@@ -191,16 +191,13 @@ A **reference** is a citable work: a publication, a resource, ...
 
 A **taxonomic name instance** is the occurrence of a name in a *reference*. A fact.  One use of a *taxonomic name* establishing context: establishment of a name, a concept, a synonym, an assertion, a relationship; tax. nov., comb.nov., … , a misapplication, or assertion; a common name.
 
-A **taxonomic name usage** is a collection of *taxonomic name instances*,  establishing a taxonomic entity, a *taxon concept* or *OTU* - often linking synonymic inclusions and adding annotations, description… 
+A **taxonomic name usage** is a collection of *taxonomic name instances*,  establishing or describing a taxonomic entity, a *taxonomic concept* or *OTU* - often linking synonymic inclusions and adding annotations, description… 
 
 - issue#1: [taxon concept vs concept label](https://github.com/tdwg/tnc/issues/1#issue-354177308)
+ 
+A **taxonomic tree** is a hierarchical collection of selected, unique, *taxonomic name usages* -  a *taxon*.
 
-A **taxonomic tree** is a hierarchical arrangement of *taxonomic name usages*
-
-A **taxonomic concept** is a reusable branch or leaf of a *taxonomic tree* circumscribing a *taxon concept*
-. 
-
-A **taxonomic arrangement** or named tree is a collection of taxa. A classification, checklist, Flora or Fauna.
+A **taxonomic arrangement** or named tree is a collection of *taxonomic trees*. A classification, checklist, Flora or Fauna.
 
 A **taxon** :
 
