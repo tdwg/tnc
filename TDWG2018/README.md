@@ -135,7 +135,7 @@ Restart with ideas in [**Linnean Core**](https://github.com/tdwg/tnc/blob/master
 - Recommend classes.
 - Guidelines.
 
-**Darwin Core**
+**Darwin Core Taxon** 
 - leave "convenience" terms and internal links.
 - remove external links (id terms) ?
 - Add new terms?
@@ -147,8 +147,7 @@ Restart with ideas in [**Linnean Core**](https://github.com/tdwg/tnc/blob/master
 	- Name
 	- Instance (name occurrence) according
 	- Usage ( potential/taxonomic concept)
-	- Taxon
-	- Taxonomic Tree ?
+	- Tree ?
 	- Arrangement
 
 ## What are we looking for in a Name standard/vocabulary?
@@ -185,9 +184,11 @@ Restart with ideas in [**Linnean Core**](https://github.com/tdwg/tnc/blob/master
 
 A **name** is a "name", a designation, a label, a string used as a name or in place of a name: in any context.
 
-A **taxonomic name** is a *name* used in a taxonomic context; often a *scientific name* formulated (or attempted to be) according to some rules of nomenclature.
+A **scientific name** a *name* formulated (or attempted to be) according to some rules of nomenclature; uni/bi/tri.nomial_name, author, [year]  
 
-A **reference** is a citable work: a publication, a resource, ...
+A **taxonomic name** is a *name* used in a taxonomic context, i.e. with a reference; often a *scientific name*.
+
+A **reference** is a citable work: a publication, a resource, ... might be local.usage.
 
 A **taxonomic name instance** is the occurrence of a name in a *reference*. A fact.  One use of a *taxonomic name* establishing context: establishment of a name, a concept, a synonym, an assertion, a relationship; tax. nov., comb.nov., … , a misapplication, or assertion; a common name.
 
@@ -195,7 +196,7 @@ A **taxonomic name usage** is a collection of *taxonomic name instances*,  estab
 
 - issue#1: [taxon concept vs concept label](https://github.com/tdwg/tnc/issues/1#issue-354177308)
  
-A **taxonomic tree** is a hierarchical collection of selected, unique, *taxonomic name usages* -  a *taxon*.
+A **taxonomic tree** is a hierarchical collection of selected, unique, *taxonomic name usages* -  a *taxonomy*.
 
 A **taxonomic arrangement** or named tree is a collection of *taxonomic trees*. A classification, checklist, Flora or Fauna.
 
