@@ -245,7 +245,7 @@ Bibliographic pattern:  Where a name is found and how it is used in that place.
   * dc:title, dc:creator, dc:created:...
   * CitedAs
   * External resource !
-* Instance
+* Name Instance
   * Type of instance !
   * Name !
   * Reference !
@@ -267,12 +267,13 @@ Bibliographic pattern:  Where a name is found and how it is used in that place.
 * Vocabularies
   * Code of Nomenclature
   * Status of a Name
-  * Code !
-  * Status
-  * Description
+    * Code !
+    * Status
   * Type of Name
-  * Type of Instance (usage/relationship)
-  * The system of Name Ranks
+  * Type of Name Instance (usage/relationship)
+  * The Ranks of Names
+    * Code !
+    * Rank
   * Type of Reference
   * Type of external Resource
   * Type of treenode
