@@ -5,11 +5,14 @@ Taxonomic Names and Concepts Interest Group
 - Niels Klazenga, Royal Botanic Gardens Victoria, Australia
 
 ## Core members
-- Aaron Wilton, Landcare Research Manaaki Whenua, New Zealand
+- Steve Baskauf, Vanderbilt University, Tennessee (TAG representative)
 - Stan Blum, TDWG, California
-- Nico Franz
+- Markus Döring, GBIF, Denmark
+- Nico Franz, Arizona State University
+- Jeff Gerbracht, Cornell Lab of Ornithology, New York
+- Richard Pyle, Bishop Museum, Hawai'i
 - Greg Whitbread, Taxamatics, Australia
-- Steve Baskauf
+- Aaron Wilton, Landcare Research Manaaki Whenua, New Zealand
 
 ## Motivation
 The aim of the Taxon Names and Concepts (TNC) group is to promote the understanding of taxonomic names and their relation to described taxa (taxon concepts). Taxonomic names and concepts are the fundamental units for communicating biological information. This group promotes the effective use of taxonomic names and concepts in biodiversity information for describing specimens and observations.
