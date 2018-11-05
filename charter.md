@@ -22,9 +22,10 @@ An important part of this process requires that standards for this information m
 The TNC group is open to all interested parties. Watch this repository to stay abreast of the issues as they arise. Full membership is available to individuals who intend to be materially active in the group by request to the Convenor.
 
 The Interest Group's goal for this year is to come up with a modern replacement of the **Taxonomic Concept Transfer Schema (TCS)** that:
-	- is compliant with the TDWG [Standards Documentation Standard](https://github.com/tdwg/vocab/tree/master/sds) and [Vocabulary Maintenance Standard](https://github.com/tdwg/vocab/tree/master/vms).
-	- provides for the needs of the various types of users and use cases of Taxonomic Names in the biodiversity informatics space
-	- as much as possible synthesises and takes benefit of the work that has been done in the TDWG community so far.
+
+- is compliant with the TDWG [Standards Documentation Standard](https://github.com/tdwg/vocab/tree/master/sds) and [Vocabulary Maintenance Standard](https://github.com/tdwg/vocab/tree/master/vms).
+- provides for the needs of the various types of users and use cases of Taxonomic Names in the biodiversity informatics space
+- as much as possible synthesises and takes benefit of the work that has been done in the TDWG community so far.
 
 ## History and Context
 The Taxon Names and Concepts subgroup was formed at TDWG 2003 from the earlier Taxon Names group with the remit of proposing a data transfer standard for taxonomic names and concepts (taxa). The group has explored many of the issues surrounding the use and representation of names and concepts and has iteratively developed an exchange schema, the Taxon Concept Schema (TCS) which was ratified at TDWG 2005 and released as TCS 1.01.
