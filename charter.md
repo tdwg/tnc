@@ -1,5 +1,4 @@
-# tnc
-Taxonomic Names and Concepts Interest Group
+# Taxonomic Names and Concepts Interest Group (TNC)
 
 ## Motivation
 The aim of the Taxon Names and Concepts (TNC) group is to promote the understanding of taxonomic names and their relation to described taxa (taxon concepts). Taxonomic names and concepts are the fundamental units for communicating biological information. This group promotes the effective use of taxonomic names and concepts in biodiversity information for describing specimens and observations.
