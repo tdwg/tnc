@@ -15,6 +15,7 @@ An important part of this process requires that standards for this information m
 - Nico Franz, Arizona State University
 - Jeff Gerbracht, Cornell Lab of Ornithology, New York
 - Richard Pyle, Bishop Museum, Hawai'i
+- William Ulate, Missouri Botanical Garden
 - Greg Whitbread, Taxamatics, Australia
 - Aaron Wilton, Landcare Research Manaaki Whenua, New Zealand
 

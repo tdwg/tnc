@@ -46,4 +46,5 @@ Name | Email | Affiliation | Country
 Greg Whitbread | ... | Taxamatics | Australia
 Jeff Gerbracht | ... | Cornell Lab of Ornithology | U.S.A.
 Stan Blum | ... | TDWG | U.S.A.
+William Ulate | ... | Missouri Botanical Garden | U.S.A.
 Rich Pyle | ... | Bernice P. Bishop Museum | U.S.A.
