@@ -1,5 +1,4 @@
-# tnc
-Taxonomic Names and Concepts Interest Group
+# Taxonomic Names and Concepts Interest Group
 
 ## Convenor
 Niels Klazenga
