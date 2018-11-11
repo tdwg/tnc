@@ -26,6 +26,13 @@
   - trypeSpecimen
 - hasAnnotation
   - type
+    - SpellingCorrectionOf
+    - Basionym
+    - BasedOn
+    - ConservedAgainst
+    - LaterHomonymOf
+    - Sanctioned
+    - ReplacementNameFor
   - subjectTaxonName
   - objectTaxonName
   - code
