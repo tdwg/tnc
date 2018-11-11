@@ -89,7 +89,7 @@ Definition | The current name is a spelling correction of the name that is point
 Type       | [NomenclaturalNoteType](NomenclaturalNoteType.md)
 Repeatable | Yes
 
-#### Basionym
+### Basionym
 
 Label      | Basionym
 -----------|-------------------------------------------------------
@@ -97,7 +97,7 @@ Definition | The current name is a recombination (comb nov) of the name pointed 
 Type       | [NomenclaturalNoteType](NomenclaturalNoteType.md)
 Repeatable | No
 
-#### BasedOn
+### BasedOn
 
 Label      | BasedOn
 -----------|-------------------------------------------------------
