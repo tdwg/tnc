@@ -1,6 +1,12 @@
 = Taxonomic Names and Usages
 :baseUrl: http://rs.tdwg.org/tnu/terms/
 :dwc: http://rs.tdwg.org/dwc/terms/
+:toc:
+:toc-placement!:
+
+toc::[]
+
+== Classes
 
 [cols="20%,80%"]
 |===
@@ -43,8 +49,9 @@ a| * [TCS:] `DataSet/Publications/Publication`
 | Examples |
 |===
 
+== Properties
 
-== TaxonomicName
+=== TaxonomicName
 
 [cols="20%,80%"]
 |===
@@ -151,7 +158,7 @@ a|
 
 |===
 
-== TaxonomicNameUsage
+=== TaxonomicNameUsage
 
 [cols="20%,80%"]
 |===
@@ -339,6 +346,6 @@ a|
 |===
 
 
-== TaxonConceptRelationship
+=== TaxonConceptRelationship
 
 TODO
