@@ -84,5 +84,7 @@
 
 
 <a id="footnote-1"><sup>[1]</sup></a> The attribution is really weak in TCS. I would like to have a **Reference** ([dcterms:BibliographicResource](http://dublincore.org/documents/2012/06/14/dcmi-terms/#terms-BibliographicResource)?) class, so that a **TaxonomicNameUsage** is clearly an intersection between a **TaxonomicName** and a **Reference** (I stole some words from Greg's mouth). [NK, 2018-11-10]
+* I take back the first bit, as I just noticed the TCS Publication class, so now propose to
+  have a Publication class with the ID http://purl.org/dc/terms/BibliographicResource [NK, 2018-11-12]
 
 <a id="footnote-2"><sup>[2]</sup></a> The translation from the TCS *Specimen Circumscription* and *Character Circumscription* is rather poor. I am wondering if anybody ever has used or would use these terms, or that we could leave them out. [NK, 2018-11-10]

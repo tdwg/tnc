@@ -1,0 +1,344 @@
+= Taxonomic Names and Usages
+:baseUrl: http://rs.tdwg.org/tnu/terms/
+:dwc: http://rs.tdwg.org/dwc/terms/
+
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#class:# TaxonomicName
+| Identifier | {baseUrl}TaxonomicName
+| Definition |
+| Comments
+a| * [TCS:] `DataSet/TaxonNames/TaxonName`
+| Examples |
+|===
+
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#class:# TaxonomicNameUsage
+| Identifier | {baseUrl}TaxonomicNameUsage
+| Definition |
+| Comments
+a| * [TCS:] `DataSet/TaxonConcepts/TaxonConcept`
+| Examples |
+|===
+
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#class:# TaxonConceptRelationship
+| Identifier | {baseUrl}TaxonConceptRelationship
+| Definition |
+| Comments
+a| * [TCS:] `DataSet/TaxonRelationshipAssertions/TaxonRelationshipAssertion`
+| Examples |
+|===
+
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#class:# BibliographicResource
+| Identifier | http://purl.org/dc/terms/BibliographicResource
+| Label | Publication
+| Definition |
+| Comments
+a| * [TCS:] `DataSet/Publications/Publication`
+| Examples |
+|===
+
+
+== TaxonomicName
+
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#property:# name
+| Identifier | {baseUrl}name
+| Definition |
+| Comments
+a| * [DwC:] {dwc}scientificName[dwc:scientificName]
+* [TCS:] `DataSet/TaxonNames/TaxonName/Simple`
+| Examples |
+
+2+a| .Discussion
+* TCS also has a `DataSet/TaxonNames/TaxonName/CanonicalName` where the name is
+  split up into its constituent parts. I [NK] think this probably shouldn't be
+  in the specification, but be left to implementations. [NK, 2018-11-12]
+|===
+
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#property:# authorship
+| Identifier | {baseUrl}authorship
+| Definition |
+| Comments
+a| * [DwC:] {dwc}scientificNameAuthorship[dwc:scientificNameAuthorship]
+  * [TCS:] `DataSet/TaxonNames/TaxonName/CanonicalAuthorship/Simple`
+| Examples |
+
+2+a| .Discussion
+* Like the CanonicalName, I think we can leave out CanonicalAuthorship
+  (`DataSet/TaxonNames/TaxonName/CanonicalAuthorship`) and only use the string
+  representation. The constituent parts of the authorship should be in the
+  Publication details. [NK, 2018-11-12]
+|===
+
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#property:# year
+| Identifier | {baseUrl}year
+| Definition |
+| Comments
+a|
+* [TCS:] `DataSet/TaxonNames/TaxonName/Year`
+* [DwC:] {dwc}namePublishedInYear[dwc:namePublishedInYear]
+| Examples |
+|===
+
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#property:# rank
+| Identifier | {baseUrl}rank
+| Definition |
+| Comments
+a|
+* [TCS:] `DataSet/TaxonNames/TaxonName/Rank`
+* [DwC:] {dwc}taxonRank[dwc:taxonRank]
+| Examples |
+|===
+
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#property:# rankString
+| Identifier | {baseUrl}rankString
+| Definition |
+| Comments
+a|
+* [Dwc:] {dwc}verbatimTaxonRank[dwc:verbatimTaxonRank]
+| Examples |
+|===
+
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#property:# nomenclaturalCode
+| Identifier | {baseUrl}nomenclaturalCode
+| Definition |
+| Comments
+a|
+* [TCS:] `DataSet/TaxonNames/TaxonName/@nomenclaturalCode`
+* [DwC:] {dwc}nomenclaturalCode[dwc:nomenclaturalCode]
+| Examples |
+|===
+
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#property:# nomenclaturalStatus
+| Identifier | {baseUrl}nomenclaturalStatus
+| Definition
+| The status related to the original publication of the name and its conformance
+  to the relevant rules of nomenclature. It is based essentially on an algorithm
+  according to the business rules of the code. It requires no taxonomic opinion.
+| Comments
+a|
+* TCS equivalent: `DataSet/TaxonNames/TaxonName/PublicationStatus`
+* DwC equivalent: {dwc}nomenclaturalStatus[dwc:nomenclaturalStatus]
+| Examples | `nom. inval.`, `nom. illeg.`
+2+a|
+
+.Discussion
+- In TCS `PublicationStatus` is a NomenclaturalNoteType (complexType with
+  several sub-elements), which allows for a lot of detail, but is not so great
+  for searching and linking etc. We should have a vocabulary on this term and
+  deal with the detail in the vocabulary. Rules (or their numbering) tend to
+  change between consecutive issues of a Code. [NK, 2018-11-12]
+- Should this also be moved to TaxonomicNameUsage? [NK, 2018-11-12]
+
+|===
+
+== TaxonomicNameUsage
+
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#property:# label
+| Identifier | {baseUrl}label
+| Definition |
+| Comments |
+| Examples |
+2+a|
+
+.Discussion
+* This will expand to '`taxonomicNameUsageLabel`' in flat serialisations.
+* `:TaxonomicConceptLabel` of Senderov _et al._ 2018.
+* Replaces `accordingToString` (`DataSet/TaxonConcepts/TaxonConcept/AccordingTo/Simple`)
+  and `nameString` (`DataSet/TaxonConcepts/TaxonConcept/Name/TaxonName/Simple`)
+  from the TDWG Taxon LSID Ontology (and TCS). [NK, 2018-11-12]
+
+|===
+
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#property:# taxonomicName
+| Identifier | {baseUrl}taxonomicName
+| Definition |
+| Comments
+a|
+* [TCS:] `DataSet/TaxonConcepts/TaxonConcept/Name`
+| Examples |
+2+a|
+
+.Discussion
+* I thought better replace 'name' with 'taxonomicName', so that people do not
+  think it as a _de facto_ identifier for a TNU. [NK, 2018-11-12]
+|===
+
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#property:# accordingTo
+| Identifier | {baseUrl}accordingTo
+| Definition |
+| Comments
+a|
+* [TCS:] `DataSet/TaxonConcepts/TaxonConcept/AccordingTo`
+| Examples |
+|===
+
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#property:# microReference
+| Identifier | {baseUrl}microReference
+| Definition |
+| Comments
+a|
+* [TCS:]
+** `DataSet/TaxonConcepts/TaxonConcept/AccordingTo/AccordingToDetailed/MicroReference`
+** `DataSet/TaxonNames/TaxonName/MicroReference`
+** `DataSet/TaxonNames/TaxonName/Typification/TypeVouchers/TypeVoucher/LectotypeMicroReference`
+** `DataSet/TaxonNames/TaxonName/Typification/TypeName/LectotypeMicroReference`
+** `//element(*,NomenclaturalNoteType)/MicroReference`
+| Examples |
+2+a|
+
+.Discussion
+* TCS uses MicroReference in a number of places, including in the TaxonName
+  class. I think all the bits in the TaxonName class where this applies to
+  have been moved into the TaxonomicNameUsage class, but we are still going
+  to need micro references in the TaxonConceptRelationship class. Would it be
+  useful to have a Reference that comprises a Publication (or
+  BibliographicResource) and a micro reference? (I probably wouldn't use it in a
+  database, but would in JSON) [NK, 2018-11-12]
+
+|===
+
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#property:# type
+| Identifier | {baseUrl}type
+| Definition |
+| Comments |
+| Examples |
+2+a|
+
+.Discussion
+* I propose to replace the TCS `primary` (`DataSet/TaxonConcepts/TaxonConcept/@primary`)
+  attribute with a `type` property. This allows for a vocabulary with just '`primary`'
+  and '`secondary`', basically corresponding to the boolean in TCS, or a more
+  detailed Taxonomic Name Usage Type vocabulary. [NK, 2018-11-12]
+|===
+
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#property:# typification
+| Identifier | {baseUrl}typification
+| Definition |
+| Comments
+a|
+* [TCS:] `DataSet/TaxonNames/TaxonName/Typification`
+| Examples |
+2+a|
+
+.Discussion
+* It might be better to leave this out of the specification, but implementations
+  will need to have a repeatable typification element, that contains the
+  typeOfType and typeSpecimen properties. [NK, 2018-11-12]
+* Lecto- and Neotypifications are TNUs. Does this mean that Typification is
+  better moved to the TaxonomicNameUsage class? (I think I'd like that; so much
+  so that I went ahead and did it) [NK, 2018-11-12]
+
+|===
+
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#property:# typeOfType
+| Identifier | {baseUrl}typeOfType
+| Definition |
+| Comments
+a|
+* [TCS:] `DataSet/TaxonNames/TaxonName/Typification/TypeVouchers/TypeVoucher/@typeOfType`
+| Examples |
+|===
+
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#property:# typeSpecimen
+| Identifier | {baseUrl}typeSpecimen
+| Definition |
+| Comments
+a|
+* [TCS:] `DataSet/TaxonNames/TaxonName/Typification/TypeVouchers/TypeVoucher/VoucherReference`
+| Examples |
+|===
+
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#property:# circumscription
+| Identifier | {baseUrl}circumscription
+| Definition |
+| Comments
+a|
+* [TCS:] `DataSet/TaxonConcepts/TaxonConcept/SpecimenCircumscription`
+  + `DataSet/TaxonConcepts/TaxonConcept/CharacterCircumscription`
+| Examples |
+2+a|
+
+.Discussion
+* I wonder if anybody has ever implemented this, or has an idea how to implement
+  it. I propose to have a single `circumsciption` property as a place holder.
+  [NK, 2018-11-12]
+
+|===
+
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#property:# relationships
+| Identifier | {baseUrl}relationships
+| Definition |
+| Comments
+a|
+* [TCS:] DataSet/TaxonConcepts/TaxonConcept/TaxonRelationships
+| Examples |
+2+a|
+
+.Discussion
+* Taxonomic Name Usage relationships will be discussed later (early 2019).
+* I expect the TCS NomenclaturalNoteTypes can be treated as TNU relationships.
+  [NK, 2018-11-12]
+
+|===
+
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#property:# facts
+| Identifier | {baseUrl}facts
+| Definition |
+| Comments |
+| Examples |
+2+a|
+
+.Discussion
+* I can't find this in TCS, but it is in the TDWG Taxon Concept LSID Ontology as
+  `hasInformation` and has the Species Profile Model `InfoItem` as it range. I
+  think this is the same as the __Fact__s in the Berlin Model (or MoReTax). Good
+  to have as an attachment point for traits? [NK, 2018-11-12]
+
+|===
+
+
+== TaxonConceptRelationship
+
+TODO
