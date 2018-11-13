@@ -1,10 +1,47 @@
 = Taxonomic Names and Usages
 :baseUrl: http://rs.tdwg.org/tnu/terms/
 :dwc: http://rs.tdwg.org/dwc/terms/
-:toc:
-:toc-placement!:
+:voc: http://rs.tdwg.org/ontology/voc/
+:tn: http://rs.tdwg.org/ontology/voc/TaxonName#
+:tc: http://rs.tdwg.org/ontology/voc/TaxonConcept#
 
-toc::[]
+== Table of Contents
+* <<Classes>>
+** <<class-taxonomicname, class: TaxonomicName>>
+** <<class-taxonomicnameusage, class: TaxonomicNameUsage>>
+** <<class-relationship, class: Relationship>>
+** <<class-bibliographicresource, class: BibliographicResource>>
+* <<Properties>>
+** <<TaxonomicName>>
+*** <<property-name, property: name>>
+*** <<property-authorship, property: authorship>>
+*** <<property-year, property: year>>
+*** <<property-rank, property: rank>>
+*** <<property-rankString, property: rankString>>
+*** <<property-nomenclaturalCode, property: nomenclaturalCode>>
+** <<TaxonomicNameUsage>>
+*** <<property-label, property: label>>
+*** <<property-hasname, property: hasName>>
+*** <<property-accordingto, property: accordingTo>>
+*** <<property-microreference, property: microreference>>
+*** <<property-type, property: type>>
+*** <<property-nomenclaturalstatus, property: nomenclaturalStatus>>
+*** <<property-taxonomicstatus, property: taxonomicStatus>>
+*** <<property-typifiedby, property: typifiedBy>>
+*** <<property-typeoftype, property: typeOfType>>
+*** <<property-typespecimen, property: typespecimen>>
+*** <<property-circumscription, property: circumscription>>
+*** <<property-hasrelationship, property: hasRelationship>>
+*** <<property-hasinformation, property: hasInformation>>
+** <<Relationship>>
+*** <<property-relationshiptype, property: relationshiptype>>
+*** <<property-fromtaxon, property: fromTaxon>>
+*** <<property-totaxon, property: toTaxon>>
+* <<Vocabularies>>
+** <<Nomenclatural Status Vocabulary>>
+** <<Taxonomic Status Vocabulary>>
+** <<Taxonomic Name Usage Type Vocabulary>>
+** <<Relationship Type Vocabulary>>
 
 == Classes
 
@@ -14,7 +51,9 @@ toc::[]
 | Identifier | {baseUrl}TaxonomicName
 | Definition |
 | Comments
-a| * [TCS:] `DataSet/TaxonNames/TaxonName`
+a|
+* [TCS:] `DataSet/TaxonNames/TaxonName`
+* [LSID:] {voc}TaxonName
 | Examples |
 2+a|
 
@@ -29,7 +68,9 @@ a| * [TCS:] `DataSet/TaxonNames/TaxonName`
 | Identifier | {baseUrl}TaxonomicNameUsage
 | Definition |
 | Comments
-a| * [TCS:] `DataSet/TaxonConcepts/TaxonConcept`
+a|
+* [TCS:] `DataSet/TaxonConcepts/TaxonConcept`
+* [LSID:] {voc}TaxonConcept
 | Examples |
 2+a|
 
@@ -40,11 +81,13 @@ a| * [TCS:] `DataSet/TaxonConcepts/TaxonConcept`
 
 [cols="20%,80%"]
 |===
-2+a| ==== [small]#class:# TaxonConceptRelationship
-| Identifier | {baseUrl}TaxonConceptRelationship
+2+a| ==== [small]#class:# Relationship
+| Identifier | {baseUrl}Relationship
 | Definition |
 | Comments
-a| * [TCS:] `DataSet/TaxonRelationshipAssertions/TaxonRelationshipAssertion`
+a|
+* [TCS:] `DataSet/TaxonConcepts/TaxonConcept/TaxonRelationships/TaxonRelationship`
+* [LSID:] {tc}Relationship
 | Examples |
 2+a|
 
@@ -79,14 +122,16 @@ a| * [TCS:] `DataSet/Publications/Publication`
 | Identifier | {baseUrl}name
 | Definition |
 | Comments
-a| * [DwC:] {dwc}scientificName[dwc:scientificName]
+a| * [DwC:] {dwc}scientificName
 * [TCS:] `DataSet/TaxonNames/TaxonName/Simple`
+* [LSID:] {tn}nameComplete
 | Examples |
 
 2+a| .Discussion
 * TCS also has a `DataSet/TaxonNames/TaxonName/CanonicalName` where the name is
   split up into its constituent parts. I [NK] think this probably shouldn't be
-  in the specification, but be left to implementations. [NK, 2018-11-12]
+  in the specification, but be left to implementations (or maybe NOMEN). [NK,
+  2018-11-12]
 
 |===
 
@@ -96,8 +141,10 @@ a| * [DwC:] {dwc}scientificName[dwc:scientificName]
 | Identifier | {baseUrl}authorship
 | Definition |
 | Comments
-a| * [DwC:] {dwc}scientificNameAuthorship[dwc:scientificNameAuthorship]
-  * [TCS:] `DataSet/TaxonNames/TaxonName/CanonicalAuthorship/Simple`
+a|
+* [TCS:] `DataSet/TaxonNames/TaxonName/CanonicalAuthorship/Simple`
+* [LSID:] {tn}authorship
+* [DwC:] {dwc}scientificNameAuthorship
 | Examples |
 
 2+a| .Discussion
@@ -116,7 +163,8 @@ a| * [DwC:] {dwc}scientificNameAuthorship[dwc:scientificNameAuthorship]
 | Comments
 a|
 * [TCS:] `DataSet/TaxonNames/TaxonName/Year`
-* [DwC:] {dwc}namePublishedInYear[dwc:namePublishedInYear]
+* [LSID:] {tn}year
+* [DwC:] {dwc}namePublishedInYear
 | Examples |
 2+a|
 
@@ -133,7 +181,8 @@ a|
 | Comments
 a|
 * [TCS:] `DataSet/TaxonNames/TaxonName/Rank`
-* [DwC:] {dwc}taxonRank[dwc:taxonRank]
+* [LSID:] {tn}rank
+* [DwC:] {dwc}taxonRank
 | Examples |
 2+a|
 
@@ -149,12 +198,16 @@ a|
 | Definition |
 | Comments
 a|
-* [Dwc:] {dwc}verbatimTaxonRank[dwc:verbatimTaxonRank]
+* [LSID:] {tn}rankString
+* [Dwc:] {dwc}verbatimTaxonRank
 | Examples |
 2+a|
 
 .Discussion
-* ...
+* Should this be in the TNU class? Seems to be a property of the primary TNU rather
+  than the name. Or can we leave it out altogether and consider it part of the name
+  (and the mapping to a rank in the vocabulary as a spelling correction
+  [or other relationship]) [NK, 2018-11-13]
 
 |===
 
@@ -166,37 +219,13 @@ a|
 | Comments
 a|
 * [TCS:] `DataSet/TaxonNames/TaxonName/@nomenclaturalCode`
-* [DwC:] {dwc}nomenclaturalCode[dwc:nomenclaturalCode]
+* [LSID:] {tn}nomenclaturalCode
+* [DwC:] {dwc}nomenclaturalCode
 | Examples |
 2+a|
 
 .Discussion
 * ...
-
-|===
-
-[cols="20%,80%"]
-|===
-2+a| ==== [small]#property:# nomenclaturalStatus
-| Identifier | {baseUrl}nomenclaturalStatus
-| Definition
-| The status related to the original publication of the name and its conformance
-  to the relevant rules of nomenclature. It is based essentially on an algorithm
-  according to the business rules of the code. It requires no taxonomic opinion.
-| Comments
-a|
-* TCS equivalent: `DataSet/TaxonNames/TaxonName/PublicationStatus`
-* DwC equivalent: {dwc}nomenclaturalStatus[dwc:nomenclaturalStatus]
-| Examples | `nom. inval.`, `nom. illeg.`
-2+a|
-
-.Discussion
-- In TCS `PublicationStatus` is a NomenclaturalNoteType (complexType with
-  several sub-elements), which allows for a lot of detail, but is not so great
-  for searching and linking etc. We should have a vocabulary on this term and
-  deal with the detail in the vocabulary. Rules (or their numbering) tend to
-  change between consecutive issues of a Code. [NK, 2018-11-12]
-- Should this also be moved to TaxonomicNameUsage? [NK, 2018-11-12]
 
 |===
 
@@ -222,18 +251,21 @@ a|
 
 [cols="20%,80%"]
 |===
-2+a| ==== [small]#property:# taxonomicName
-| Identifier | {baseUrl}taxonomicName
+2+a| ==== [small]#property:# hasName
+| Identifier | {baseUrl}hasName
 | Definition |
 | Comments
 a|
 * [TCS:] `DataSet/TaxonConcepts/TaxonConcept/Name`
+* [LSID:] {tc}hasName
 | Examples |
 2+a|
 
 .Discussion
-* I thought better replace 'name' with 'taxonomicName', so that people do not
-  think it as a _de facto_ identifier for a TNU. [NK, 2018-11-12]
+* I thought better replace 'name' with 'hasName' from the TDWG Taxon Concept
+  LSID Ontology, so that people do not think it as a _de facto_ identifier for
+  a TNU. [NK, 2018-11-13]
+
 |===
 
 [cols="20%,80%"]
@@ -244,6 +276,7 @@ a|
 | Comments
 a|
 * [TCS:] `DataSet/TaxonConcepts/TaxonConcept/AccordingTo`
+* [LSID:] {tc}accordingTo
 | Examples |
 2+a|
 
@@ -276,6 +309,9 @@ a|
   useful to have a Reference that comprises a Publication (or
   BibliographicResource) and a micro reference? (I probably wouldn't use it in a
   database, but would in JSON) [NK, 2018-11-12]
+* We should be able to find something in some citation standard that covers this
+  (haven't been successful so far). [NK, 2018-11-13]
+  ** Maybe just leave it out and leave it to implementations. [NK]
 
 |===
 
@@ -297,23 +333,65 @@ a|
 
 [cols="20%,80%"]
 |===
-2+a| ==== [small]#property:# typification
-| Identifier | {baseUrl}typification
+2+a| ==== [small]#property:# nomenclaturalStatus
+| Identifier | {baseUrl}nomenclaturalStatus
+| Definition
+| The status related to the original publication of the name and its conformance
+  to the relevant rules of nomenclature. It is based essentially on an algorithm
+  according to the business rules of the code. It requires no taxonomic opinion.
+| Comments
+a|
+* [TCS:] `DataSet/TaxonNames/TaxonName/PublicationStatus`
+* [DwC:] {dwc}nomenclaturalStatus
+| Examples | `nom. inval.`, `nom. illeg.`
+2+a|
+
+.Discussion
+- In TCS `PublicationStatus` is a NomenclaturalNoteType (complexType with
+  several sub-elements), which allows for a lot of detail, but is not so great
+  for searching and linking etc. We should have a vocabulary on this term and
+  deal with the detail in the vocabulary. Rules (or their numbering) tend to
+  change between consecutive issues of a Code. [NK, 2018-11-12]
+- In the TDWG Taxon Name LSID Ontology, {tn}PublicationStatus[tn:PublicationStatus]
+  is a {tn}NomenclaturalNoteTypeTerm[tn:NomenclaturalNoteTypeTerm]. There is no
+  property in {voc}TaxonName[TaxonName] that links a {tn}NomenclaturalNote[tn:NomenclaturalNote] to a
+  {voc}TaxonName[TaxonName], but {tn}NomenclaturalNote[tn:NomenclaturalNote]
+  has a {tn}subjectTaxonName[tn:subjectTaxonName] property that does it the other
+  way around. [NK, 2018-11-13]
+- Should this also be moved to TaxonomicNameUsage? [NK, 2018-11-12]
+
+|===
+
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#property:# taxonomicStatus
+| Identifier | {baseUrl}taxonomicStatus
+| Definition |
+| Comments
+a|
+* [DwC:] {dwc}taxonomicStatus
+| Examples |
+2+a|
+* Not in TCS or in the TDWG Taxon Concept Ontology (because TCS taxon concepts
+  are always 'accepted'?), but in Darwin Core and Berlin Model. NSL has this as
+  part of their Instance type. [NK, 2018-11-13]
+|===
+
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#property:# typifiedBy
+| Identifier | {baseUrl}typifiedBy
 | Definition |
 | Comments
 a|
 * [TCS:] `DataSet/TaxonNames/TaxonName/Typification`
-2+a|
-
-.Discussion
-* ...
-
+* [LSID:] {tn}typifiedBy
 | Examples |
 2+a|
 
 .Discussion
 * It might be better to leave this out of the specification, but implementations
-  will need to have a repeatable typification element, that contains the
+  will need to have a repeatable typification element that contains the
   typeOfType and typeSpecimen properties. [NK, 2018-11-12]
 * Lecto- and Neotypifications are TNUs. Does this mean that Typification is
   better moved to the TaxonomicNameUsage class? (I think I'd like that; so much
@@ -329,6 +407,7 @@ a|
 | Comments
 a|
 * [TCS:] `DataSet/TaxonNames/TaxonName/Typification/TypeVouchers/TypeVoucher/@typeOfType`
+* [LSID:] {tn}typeOfType
 | Examples |
 2+a|
 
@@ -345,6 +424,7 @@ a|
 | Comments
 a|
 * [TCS:] `DataSet/TaxonNames/TaxonName/Typification/TypeVouchers/TypeVoucher/VoucherReference`
+* [LSID:] {tn}typeSpecimen
 | Examples |
 2+a|
 
@@ -362,6 +442,7 @@ a|
 a|
 * [TCS:] `DataSet/TaxonConcepts/TaxonConcept/SpecimenCircumscription`
   + `DataSet/TaxonConcepts/TaxonConcept/CharacterCircumscription`
+* [LSID:] {tc}circumscribedBy + {tc}describedBy
 | Examples |
 2+a|
 
@@ -374,12 +455,13 @@ a|
 
 [cols="20%,80%"]
 |===
-2+a| ==== [small]#property:# relationships
-| Identifier | {baseUrl}relationships
+2+a| ==== [small]#property:# hasRelationship
+| Identifier | {baseUrl}hasRelationship
 | Definition |
 | Comments
 a|
-* [TCS:] DataSet/TaxonConcepts/TaxonConcept/TaxonRelationships
+* [TCS:] `DataSet/TaxonConcepts/TaxonConcept/TaxonRelationships/TaxonRelationship`
+* [LSID:] {tc}hasRelationship
 | Examples |
 2+a|
 
@@ -392,10 +474,12 @@ a|
 
 [cols="20%,80%"]
 |===
-2+a| ==== [small]#property:# facts
-| Identifier | {baseUrl}facts
+2+a| ==== [small]#property:# hasInformation
+| Identifier | {baseUrl}hasInformation
 | Definition |
-| Comments |
+| Comments
+a|
+* [LSID:] {tc}hasInformation
 | Examples |
 2+a|
 
@@ -408,6 +492,137 @@ a|
 |===
 
 
-=== TaxonConceptRelationship
+=== Relationship
 
-TODO
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#property:# relationshipType
+| Identifier | {baseUrl}relationshipType
+| Definition |
+| Comments
+a|
+* [TCS:]
+** `DataSet/TaxonConcepts/TaxonConcept/Relationships/Relationship/@type`
+** `DataSet/TaxonRelationshipAssertions/TaxonRelationshipAssertion/@type`
+* [LSID:] {tc}relationshipCategory
+| Examples |
+2+a|
+
+.Discussion
+* ...
+
+|===
+
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#property:# fromTaxon
+| Identifier | {baseUrl}fromTaxon
+| Definition |
+| Comments
+a|
+* [TCS:] `DataSet/TaxonRelationshipAssertions/TaxonRelationshipAssertion/FromTaxonConcept`
+* [LSID:] {tc}fromTaxon
+| Examples |
+2+a|
+
+.Discussion
+* TCS has relationships in two places, under `TaxonConcepts` and under
+  `TaxonRelationshipAssertions`. When under `TaxonConcepts` there is obviously
+  no `FromTaxonConcept`, as that is the `TaxonConcept` the `Relationship` sits
+  within itself.
+
+|===
+
+[cols="20%,80%"]
+|===
+2+a| ==== [small]#property:# toTaxon
+| Identifier | {baseUrl}toTaxon
+| Definition |
+| Comments
+a|
+* [TCS:]
+  ** `DataSet/TaxonConcepts/TaxonConcept/TaxonRelationships/TaxonRelationship/ToTaxonConcept`
+  ** `DataSet/TaxonRelationshipAssertions/TaxonRelationshipAssertion/ToTaxonConcept`
+* [LSID:] {tc}toTaxon
+| Examples |
+2+a|
+
+.Discussion
+* ...
+
+|===
+
+[cols="20%,80%"]
+|===
+2+a| === [small]#property:# accordingTo
+2+a|
+.Discussion
+* This is already under TaxonomicNameUsage. I propose to look for something
+  that meets the requirements in an existing specification. [NK, 2018-11-13]
+|===
+
+== Vocabularies
+
+|===
+a| ==== Nomenclatural Status Vocabulary
+| http://rs.gbif.org/vocabulary/gbif/nomenclatural_status
+|===
+
+|===
+a| === Taxonomic Status Vocabulary
+| accepted
+| synonym
+| partial synonym
+| pro parte synonym
+| unresolved
+| misapplication
+|===
+
+|===
+a| === Taxonomic Name Usage Type Vocabulary
+| primary
+| secondary
+|===
+
+|===
+a| === Relationship Type Vocabulary
+s| Nomenclatural Note
+| SpellingCorrectionOf
+| Basionym
+| BasedOn
+| ConservedAgainst
+| LaterHomonymOf
+| Sanctioned
+| ReplacementNameFor
+s| Traditional Synonymy [small]#(from Berlin Core)#
+| is synonym of
+| is partial synonym of
+| is pro parte synonym of
+| is misapplied name for
+s| Hierarchical Relationship
+| is child taxon of
+| is parent taxon of
+s| Set Relationship
+| does not include
+| does not overlap
+| excludes
+| includes
+| is congruent to
+| is included in
+| is not congruent to
+| overlaps
+s| Vernacular Name
+| has vernacular
+| is vernacular for
+s| Hybrid Relationship
+| is female parent of
+| is first parent of
+| is hybrid child of
+| is hybrid parent of
+| is male parent of
+| is second parent of
+s| Miscellaneous
+| is anamorph of (before 2012)
+| is teleomorph of (before 2012)
+| is ambiregnal of
+|===
