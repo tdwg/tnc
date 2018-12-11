@@ -5,6 +5,8 @@
 :tn: http://rs.tdwg.org/ontology/voc/TaxonName#
 :tc: http://rs.tdwg.org/ontology/voc/TaxonConcept#
 
+*Note:* Up-to-date draft is at: https://docs.google.com/document/d/1bcfjhh0ztmXKz7P9G0ni7vYZc3MtH4LLxlCZjswF2k4
+
 == Table of Contents
 * <<Classes>>
 ** <<class-taxonomicname, class: TaxonomicName>>
