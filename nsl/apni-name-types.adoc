@@ -1,5 +1,0 @@
-[format="csv",grid="cols",options="header,"footer"]
-|===============================================================
-name,autonym,connector,cultivar,formula,hybrid,scientific,rdf_id
-include::apni-name-types.csv[]
-|===============================================================
