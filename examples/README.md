@@ -16,7 +16,7 @@ but we'll clean it up and make it more consistent as we go.
   standpoint).
 
   The example caused a bit of an email discussion, which has been included, and
-  sparked off a discussion about how to treat homotypic and heterotypic synonyms.
+  sparked off a discussion about homotypic and heterotypic synonyms.
 
 - [Homotypic and heterotypic synonym discussion](homotypic-heterotypic-examples.md).
   This discussion came forth from the discussion about what relationships are new
