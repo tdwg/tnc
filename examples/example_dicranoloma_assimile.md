@@ -6,9 +6,9 @@ below. I've thrown in some of the treatments of previous workers.
 
 I have created the Resource Relationships for basionyms and heterotypic synonyms,
 but I think it would be preferable to deal with 'basionym' and 'acceptedNameUsage'
-(which is already in Darwin Core) properties in the TNU class. This way we separate
-between nomenclatural relationships from concept relationships, as well as between
-many-to-one and many-to-many relationships.
+(which is already in Darwin Core) properties in the TNU class. This way we make
+a clear distinction between nomenclatural relationships from concept relationships,
+as well as between many-to-one and many-to-many relationships.
 
 
 <br>
