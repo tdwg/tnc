@@ -1,14 +1,15 @@
 # Example: Dicranoloma assimile
 
-Example has been worked out in a [Google Sheet](https://docs.google.com/spreadsheets/d/1ZTzHKQOgECpwUmQyDcDfnNnk6n6UK-FPCvo0qFDbJjw/edit?usp=sharing). Excerpts from the
-publications where the data has been taken from are (rather poorly) reproduced
-below. I've thrown in some of the treatments of previous workers.
+Example has been worked out in a [Google Sheet](https://docs.google.com/spreadsheets/d/1ZTzHKQOgECpwUmQyDcDfnNnk6n6UK-FPCvo0qFDbJjw/edit?usp=sharing).
+Excerpts from the publications where the data has been taken from are
+(rather poorly) reproduced below. I've thrown in some of the treatments of
+previous workers.
 
 I have created the Resource Relationships for basionyms and heterotypic synonyms,
-but I think it would be preferable to deal with 'basionym' and 'acceptedNameUsage'
-(which is already in Darwin Core) properties in the TNU class. This way we make
-a clear distinction between nomenclatural relationships from concept relationships,
-as well as between many-to-one and many-to-many relationships.
+but I think it would be preferable to deal with synonyms using 'basionym' and
+'acceptedNameUsage' (which is already in Darwin Core) properties in the TNU class.
+This way we make a clear distinction between nomenclatural relationships and
+concept relationships, and between many-to-one and many-to-many relationships.
 
 
 <br>
