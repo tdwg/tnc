@@ -6,7 +6,7 @@ but we'll clean it up and make it more consistent as we go.
 
 ## Index
 
-- [NSL instance graph example](https://github.com/tdwg/tnc/blob/master/TDWG2018/nsl-instancegraph-example.pdf)
+- [NSL instance graph example](https://github.com/tdwg/tnc/blob/master/TDWG2018/nsl-instancegraph-example.pdf) example for Hakea chordophylla F.Muell.
 
 - ["Misapplication" example](misapplication-example.md)
   from one of my (NK) Flora of Australia treatments, to illustrate the discussion
