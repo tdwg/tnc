@@ -11,11 +11,9 @@ but I think it would be preferable to deal with synonyms using 'basionym' and
 This way we make a clear distinction between nomenclatural relationships and
 concept relationships, and between many-to-one and many-to-many relationships.
 
-
 <br>
 
 <br>
-
 
 ![Klazenga 1999:48](images/dicranoloma_assimile_1.png)
 ![Klazenga 1999:51](images/dicranoloma_assimile_2.png)
