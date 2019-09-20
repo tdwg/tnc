@@ -1,0 +1,571 @@
+{
+  "name": "bryophytes-of-australia-census",
+  "title": "Census of Australian Bryophytes",
+  "version": "1.0",
+  "licenses": [
+    {
+      "id": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Niels Klazenga",
+      "email": "Niels.Klazenga@rbg.vic.gov.au"
+    }
+  ],
+  "maintainers": [
+    {
+      "title": "Niels.Klazenga",
+      "email": "Niels.Klazenga@rbg.vic.gov.au"
+    }
+  ],
+  "sources": [
+    {
+      "title": "AusMoss – National Species Lists",
+      "path": "https://moss.biodiversity.org.au/nsl/services/"
+    }
+  ],
+  "resources": [
+    {
+      "profile": "tabular-data-resource",
+      "name": "taxonomic-name-usages",
+      "path": "data/taxonomic_name_usages.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "title": "id",
+            "type": "string",
+            "format": "uri",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "http://rs.tdwg.org/tnu/terms/taxonomicName",
+            "title": "taxonomicName",
+            "type": "string",
+            "format": "uri",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "http://rs.tdwg.org/tnu/terms/accordingTo",
+            "title": "accordingTo",
+            "type": "string",
+            "format": "uri",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "http://rs.tdwg.org/tnu/terms/taxonomicStatus",
+            "title": "taxonomicStatus",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "accepted",
+                "synonym"
+              ]
+            },
+            "format": "default"
+          },
+          {
+            "name": "http://rs.tdwg.org/tnu/terms/acceptedNameUsage",
+            "title": "acceptedNameUsage",
+            "type": "string",
+            "format": "uri"
+          },
+          {
+            "name": "http://rs.tdwg.org/tnu/terms/parentNameUsage",
+            "title": "parentNameUsage",
+            "type": "string",
+            "format": "uri"
+          }
+        ],
+        "primaryKey": "id",
+        "foreignKeys": [
+          {
+            "fields": "http://rs.tdwg.org/tnu/terms/taxonomicName",
+            "reference": {
+              "resource": "taxonomic-names",
+              "fields": "id"
+            }
+          },
+          {
+            "fields": "http://rs.tdwg.org/tnu/terms/accordingTo",
+            "reference": {
+              "resource": "bibliographic-resources",
+              "fields": "id"
+            }
+          },
+          {
+            "fields": "http://rs.tdwg.org/tnu/terms/acceptedNameUsage",
+            "reference": {
+              "resource": "",
+              "fields": "id"
+            }
+          },
+          {
+            "fields": "http://rs.tdwg.org/tnu/terms/parentNameUsage",
+            "reference": {
+              "resource": "taxonomic-names",
+              "fields": "id"
+            }
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "taxonomic-names",
+      "path": "data/taxonomic_names.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "title": "id",
+            "type": "string",
+            "format": "uri",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "http://rs.tdwg.or/tnu/terms/taxonomicNameString",
+            "title": "taxonomicNameString",
+            "type": "string",
+            "constraints": {
+              "required": true
+            },
+            "format": "default"
+          },
+          {
+            "name": "http://rs.tdwg.or/tnu/terms/authorship",
+            "title": "authorship",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "http://rs.tdwg.or/tnu/terms/taxonomicNameStringWithAuthorship",
+            "title": "taxonomicNameStringWithAuthorship",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "http://rs.tdwg.or/tnu/terms/namePublishedIn",
+            "title": "namePublishedIn",
+            "type": "string",
+            "format": "uri"
+          },
+          {
+            "name": "http://rs.tdwg.or/tnu/terms/microReference",
+            "title": "microReference",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "http://rs.tdwg.or/tnu/terms/publicationYear",
+            "title": "publicationYear",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "http://rs.tdwg.or/tnu/terms/rank",
+            "title": "rank",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "kingdom",
+                "phylum",
+                "class",
+                "subclass",
+                "superorder",
+                "order",
+                "suborder",
+                "family",
+                "subfamily",
+                "genus",
+                "subgenus",
+                "section",
+                "species",
+                "variety",
+                "form"
+              ]
+            },
+            "format": "default"
+          },
+          {
+            "name": "http://rs.tdwg.or/tnu/terms/nomenclaturalCode",
+            "title": "nomenclaturalCode",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "http://rs.gbif.org/vocabulary/gbif/nomenclatural_code/ICN",
+                "http://rs.gbif.org/vocabulary/gbif/nomenclatural_code/ICZN",
+                "http://rs.gbif.org/vocabulary/gbif/nomenclatural_code/ICVCN",
+                "http://rs.gbif.org/vocabulary/gbif/nomenclatural_code/ICNB",
+                "http://rs.gbif.org/vocabulary/gbif/nomenclatural_code/ICNCP",
+                "http://rs.gbif.org/vocabulary/gbif/nomenclatural_code/BioCode"
+              ]
+            },
+            "format": "uri"
+          },
+          {
+            "name": "http://rs.tdwg.or/tnu/terms/nomenclaturalStatus",
+            "title": "nomenclaturalStatus",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "legitimate",
+                "illegitimate",
+                "superfluous",
+                "conserved",
+                "rejected",
+                "sanctioned",
+                "invalid"
+              ]
+            },
+            "format": "default"
+          },
+          {
+            "name": "http://rs.tdwg.or/tnu/terms/basionym",
+            "title": "basionym",
+            "type": "string",
+            "format": "uri"
+          },
+          {
+            "name": "http://rs.tdwg.or/tnu/terms/replacedName",
+            "title": "replacedName",
+            "type": "string",
+            "format": "uri"
+          }
+        ],
+        "primaryKey": "id",
+        "foreignKeys": [
+          {
+            "fields": "http://rs.tdwg.or/tnu/terms/namePublishedIn",
+            "reference": {
+              "resource": "bibliographic-resources",
+              "fields": "id"
+            }
+          },
+          {
+            "fields": "http://rs.tdwg.or/tnu/terms/basionym",
+            "reference": {
+              "resource": "",
+              "fields": "id"
+            }
+          },
+          {
+            "fields": "http://rs.tdwg.or/tnu/terms/replaceName",
+            "reference": {
+              "resource": "",
+              "fields": "id"
+            }
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "taxon-relationship-assertions",
+      "path": "data/taxon_relationship_assertions.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "title": "id",
+            "type": "string",
+            "format": "uri",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "http://rs.tdwg.or/tnu/terms/subjectTaxonomicNameUsage",
+            "title": "subjectTaxonomicNameUsage",
+            "type": "string",
+            "format": "uri",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "http://rs.tdwg.or/tnu/terms/relationshipType",
+            "title": "relationshipType",
+            "type": "string",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "isCongruentWith",
+                "includes",
+                "isIncludedIn",
+                "overlaps",
+                "excludes"
+              ]
+            },
+            "format": "default"
+          },
+          {
+            "name": "http://rs.tdwg.or/tnu/terms/objectTaxonomicNameUsage",
+            "title": "objectTaxonomicNameUsage",
+            "type": "string",
+            "format": "uri",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "http://rs.tdwg.or/tnu/terms/accordingTo",
+            "title": "accordingTo",
+            "type": "string",
+            "format": "uri",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "primaryKey": "id",
+        "foreignKeys": [
+          {
+            "fields": "http://rs.tdwg.or/tnu/terms/subjectTaxonomicNameUsage",
+            "reference": {
+              "resource": "taxonomic-name-usages",
+              "fields": "id"
+            }
+          },
+          {
+            "fields": "http://rs.tdwg.or/tnu/terms/objectTaxonomicNameUsage",
+            "reference": {
+              "resource": "taxonomic-name-usages",
+              "fields": "id"
+            }
+          },
+          {
+            "fields": "http://rs.tdwg.or/tnu/terms/accordingTo",
+            "reference": {
+              "resource": "bibliographic-resources",
+              "fields": "id"
+            }
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "distribution",
+      "path": "data/distribution.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "title": "id",
+            "type": "string",
+            "format": "uri",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "http://rs.tdwg.org/dwc/terms/taxonID",
+            "title": "taxonId",
+            "type": "string",
+            "format": "uri",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "http://rs.tdwg.org/dwc/terms/locationID",
+            "title": "locationId",
+            "type": "string",
+            "constraints": {
+              "required": true
+            },
+            "format": "default"
+          },
+          {
+            "name": "http://rs.tdwg.or/tnu/terms/locality",
+            "title": "locality",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "http://rs.tdwg.or/tnu/terms/countryCode",
+            "title": "countryCode",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "http://rs.tdwg.or/tnu/terms/occurrence_status",
+            "title": "occurrenceStatus",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "http://rs.tdwg.or/tnu/terms/establishmentMeans",
+            "title": "establishmentMeans",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "primaryKey": "id",
+        "foreignKeys": [
+          {
+            "fields": "http://rs.tdwg.org/dwc/terms/taxonID",
+            "reference": {
+              "resource": "taxonomic-name-usages",
+              "fields": "id"
+            }
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "bibliographic-resources",
+      "path": "data/bibliographic_resources.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "title": "id",
+            "type": "string",
+            "format": "uri",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "http://purl.org/dc/terms/type",
+            "title": "type",
+            "type": "string",
+            "format": "uri"
+          },
+          {
+            "name": "http://purl.org/dc/terms/creator",
+            "title": "creator",
+            "type": "string",
+            "format": "uri"
+          },
+          {
+            "name": "publictionYear",
+            "title": "publicationYear",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "title",
+            "title": "title",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "http://purl.org/dc/terms/isPartOf",
+            "title": "isPartOf",
+            "type": "string",
+            "format": "uri"
+          },
+          {
+            "name": "http://purl.org/ontology/bibo/volume",
+            "title": "volume",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "http://purl.org/ontology/bibo/pages",
+            "title": "pages",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "http://purl.org/dc/elements/1.1/publisher",
+            "title": "publisher",
+            "type": "string",
+            "format": "default"
+          }
+        ],
+        "primaryKey": "id",
+        "foreignKeys": [
+          {
+            "fields": "http://purl.org/dc/terms/creator",
+            "reference": {
+              "resource": "agents",
+              "fields": "id"
+            }
+      
+          },
+          {
+            "fields": "http://purl.org/dc/terms/isPartOf",
+            "reference": {
+              "resource": "",
+              "fields": "id"
+            }
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "agents",
+      "path": "data/agents.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "title": "id",
+            "type": "string",
+            "format": "uri",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "http://xmlns.com/foaf/0.1/name",
+            "title": "name",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "primaryKey": "id",
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ]
+}
