@@ -1,4 +1,4 @@
-# Taxonomic Names and Concepts Interest Group
+# Taxon Names and Concepts Interest Group
 
 ## Convenor
 
@@ -16,11 +16,11 @@ An important part of this process requires that standards for this information m
 
 ## Becoming Involved
 
-The TNC group is open to all interested parties. Watch this repository to stay abreast of the issues as they arise. Core membership is available to those who actively participate in our discussions and attend our meetings. Currently, the TNC is undertaking a major revision of the Taxon Concept Transfer Schema (TCS). We are also still seeking use cases and case studies to do with the exchange of taxonomic data.
+The TNC group is open to all interested parties. Watch this repository to stay abreast of the issues as they arise. Core membership is available to those who actively participate in our discussions and attend our meetings. Currently, the TNC is undertaking a major revision of the Taxonomic Concept Transfer Schema (TCS). We are also still seeking use cases and case studies to do with the exchange of taxonomic data.
 
 ## History and Context
 
-The Taxon Names and Concepts subgroup was formed at TDWG 2003 from the earlier Taxon Names group with the remit of proposing a data transfer standard for taxonomic names and concepts (taxa). The group has explored many of the issues surrounding the use and representation of names and concepts and has iteratively developed an exchange schema, the Taxon Concept Schema (TCS) which was ratified at TDWG 2005 and released as TCS 1.01. TCS has never enjoyed high utilisation, as rapid technological changes and changes in the domain made the format less suitable for data exchange. Therefore, at a workshop at TDWG 2018, it was decided that the TNC should undertake a major revision of TCS.
+The Taxon Names and Concepts subgroup was formed at TDWG 2003 from the earlier Taxon Names group with the remit of proposing a data transfer standard for taxonomic names and concepts (taxa). The group has explored many of the issues surrounding the use and representation of names and concepts and has iteratively developed an exchange schema, the Taxonomic Concept Transfer Schema (TCS) which was ratified at TDWG 2005 and released as TCS 1.01. TCS has never enjoyed high utilisation, as rapid technological changes and changes in the domain made the format less suitable for data exchange. Therefore, at a workshop at TDWG 2018, it was decided that the TNC should undertake a major revision of TCS.
 
 ## Summary
 
