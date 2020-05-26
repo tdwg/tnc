@@ -25,3 +25,5 @@ but we'll clean it up and make it more consistent as we go.
 - [Protonym discussion](protonym.md). Continued from the discussion in the issues
   [#32](https://github.com/tdwg/tnc/issues/32) and
   [#34](https://github.com/tdwg/tnc/issues/34).
+
+- [Yet another *Aus bus* example](yet-another-aus-bus-example.md)
