@@ -45,4 +45,6 @@ TNC Wiki: https://github.com/tdwg/tnc/wiki
 <!-- TNC Document Repository: http://www.tdwg.org/activities/tnc/tnc-document-repository/ containing presentations introducing readers to taxonomy and the problems associated with improper use of taxonomic names. -->
 TCS Repository: https://github.com/tdwg/tcs, includes the current release of TCS and the TCS User Guide.  
 
-[Google doc for up to date specification (working draft)](https://docs.google.com/document/d/1bcfjhh0ztmXKz7P9G0ni7vYZc3MtH4LLxlCZjswF2k4)
+[Google doc for up-to-date specification (working draft)](https://docs.google.com/document/d/1bcfjhh0ztmXKz7P9G0ni7vYZc3MtH4LLxlCZjswF2k4)
+
+[Diagram of up-to-date specification](https://drive.google.com/open?id=12EgNnoz83yNf-tk8mNmN_gmKPGo83gO5)
