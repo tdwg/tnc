@@ -67,3 +67,24 @@ As a taxonomy publisher
 - I need reliable methods to determine if a specific Taxon Concept already exists, so I don't mint duplicates.
 - I need to publish the 'Clements' checklist with Taxon Concept identifiers and provide a persistent landing page for TC definitions.
 - As Taxon Concepts become obsolete, I need to still provide the basic information of a concept, i.e. TNU and circumscription.
+
+### @afuchs1, 24 Jun. 2020
+Use Cases - Australian National Species List
+
+As a data consolidator:
+
+- I want the details of a ‘new’ taxonomic name when it is published including new combinations, authorship of the name, the full bibliographic citation, a link to the digital version of the taxonomic work, nomenclator’s registration number and the nomenclatural status based on the appropriate codes (ICN, ICZN etc), synonyms within the works (including basionyms etc) and types cited.
+- I want the details of a revision of a taxon in a taxonomic work, the full bibliographic citation, and synonyms within the works
+- In a taxonomic work I would like to extract the understanding of the taxon in comparison to previous taxonomic works (ie. in this work how is it being treated differently)
+- For a taxonomic work I would like to identify it is applicable to Australia
+- For a taxonomic name I want to know what taxonomic work established that name (protologue)
+- For a name in a taxonomic work I want to search BHL and/or publishers to establish a link to the digital version of the work.
+- WFO links …. 
+
+As a data publisher:
+
+- I want to deliver a current classification for Australia to occurrence aggregators that includes 
+The classification name, classification according to, the version of the classification, citable link to the version, all taxon concepts accepted by this classification within a taxonomic hierarchy
+-- For each accepted taxon concept within the classification
+-- The taxonomic name (with and without authorship), the taxonomic work accepted by this classification,  concepts within the classification and their rank, a citable link to the accepted taxon concept within the classification, a link to the protologue, placement of the taxon concept in the classification, synonyms of the taxonomic name, according to, 
+- I want to deliver the differences between one published version of an accepted classification and another so that consumers can apply the differences (WA census requirement)
