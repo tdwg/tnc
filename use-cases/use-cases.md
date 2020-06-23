@@ -79,12 +79,12 @@ As a data consolidator:
 - For a taxonomic work I would like to identify it is applicable to Australia
 - For a taxonomic name I want to know what taxonomic work established that name (protologue)
 - For a name in a taxonomic work I want to search BHL and/or publishers to establish a link to the digital version of the work.
-- WFO links …. 
+- As a repository of Australian taxa I would like to establish links to global respositories or products such as the World Flora Online, Catalogue of Life etc 
 
 As a data publisher:
 
 - I want to deliver a current classification for Australia to occurrence aggregators that includes 
 The classification name, classification according to, the version of the classification, citable link to the version, all taxon concepts accepted by this classification within a taxonomic hierarchy
--- For each accepted taxon concept within the classification
+- For each accepted taxon concept within the classification
 -- The taxonomic name (with and without authorship), the taxonomic work accepted by this classification,  concepts within the classification and their rank, a citable link to the accepted taxon concept within the classification, a link to the protologue, placement of the taxon concept in the classification, synonyms of the taxonomic name, according to, 
 - I want to deliver the differences between one published version of an accepted classification and another so that consumers can apply the differences (WA census requirement)
