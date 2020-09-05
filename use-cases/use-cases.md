@@ -1,8 +1,13 @@
 # Use cases
 
-Pulled out of issue #1 for starters:
+Use cases and/or desiderata of interest to the TNC interest group, for discussion. 
+A subset of these are also of specific interest to the TCS 2 task group.
 
-##@deepreef, 06 Sep. 2018
+These use cases were initially pulled out of [issue #1](https://github.com/tdwg/tnc/issues/1).  
+Subsequent additions came from the 'requirements/use cases' folder in google drive.
+There remain other interesting use cases in that folder.
+
+## @deepreef, 06 Sep. 2018
 
 OK, then maybe one way to establish use cases is to enumerate some questions we would like to ask about organisms in nature, specifically related to taxa and their names (starting with the pedantic ones and moving on to more general ones):
 
@@ -50,7 +55,7 @@ To fulfill these use cases, we'd need to be able to answer several of the questi
 
 I don't know if this is the right strategy to identify how best to proceed on this discussion and its desired outcome, but it seems to me that enumerating questions of this sort both builds the foundations for addressing Use Cases (or, perhaps, enumerating the Use Cases allow us to figure out what questions we need to answer to fulfill them), and allows us to be more specific about what entities we need to define, and what properties for each entity we need to capture.
 
-#### @jgerbracht, 18 Sep. 2018
+### @jgerbracht, 18 Sep. 2018
 
 Some more Use Cases
 
