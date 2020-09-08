@@ -1,8 +1,8 @@
 # Use cases
 
-Pulled out of issue #1 for starters:
+Pulled out of issue [#1](https://github.com/tdwg/tnc/issues/1) for starters:
 
-##@deepreef, 06 Sep. 2018
+## @deepreef, 06 Sep. 2018
 
 OK, then maybe one way to establish use cases is to enumerate some questions we would like to ask about organisms in nature, specifically related to taxa and their names (starting with the pedantic ones and moving on to more general ones):
 
