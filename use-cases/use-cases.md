@@ -59,9 +59,9 @@ I don't know if this is the right strategy to identify how best to proceed on th
 Some more Use Cases
 
 As a data consolidator.
-- Do these 2 pieces of information, from different data providers, refer to the same Taxonomic Concept?
-- What is the name for this Taxon Concept given an authority/publish date?
-- I want to 'discover' and access datasets which unambiguously refer to a specific Taxonomic Concept. i.e. H. sapiens which includes neanderthalensis vs excludes neanderthalensis
+- Do these 2 pieces of information, from different data providers, refer to the same circumscribed taxon. (Taxonomic Concept)?
+- What is the name for this Taxon given an authority/publish date?
+- I want to 'discover' and access datasets which unambiguously refer to a specific circumscribed taxon. i.e. H. sapiens which includes neanderthalensis vs excludes neanderthalensis
 
 As a data provider
 - Publish taxon related data, such as observations, which are not easily misunderstood or misapplied. i.e. I want to publish my data so that it's difficult to inappropriately consolidate with other datasets based on differing taxon concepts.
@@ -115,7 +115,7 @@ Not only RCC5 relationships but also add in a directionality. A has been replace
 
 ### GBIF Range Map, @jgerbracht, 17 Jun. 2020
 
-Using GBIF data to generate accurate range maps of a species when the players involved are not taxonomic experts.  Somehow, the GBIF datasets, from multiple sources), must include enough information about the taxonomic concept for each ‘observation’ so that each GBIF record, regardless of datasource, can be reliably combined with all other records which refer to the same taxonomic concept by non-taxonomists.  Unfortunately, names are all to commonly used to combine these data.    
+Using GBIF data to generate accurate range maps of a species when the people involved are not taxonomic experts.  Somehow, the GBIF datasets (from multiple sources) must include enough information about the taxon for each ‘observation’ so that each GBIF record, regardless of datasource, can be reliably combined with all other records which refer to the exact same circumscribed taxon and be completed accurately by non-taxonomists.  Unfortunately, names are all to commonly used to combine these data.    
 
 Download all GBIF data for _Circus cyaneus_
 - Download includes over 31,000 records from eBird which all occur in Europe and Asia and 1 North American record.   
@@ -125,16 +125,16 @@ Use these downloaded data to generate a range map for _Circus cyaneus_
 
 Unless the person creating the maps understands the taxonomic history of which concepts have had the name _Circus cyaneus_ applied to them, they will generate a range map based on the combination of multiple taxonomic concepts believing they are generating a map for a single taxonomic concept.   
 
-To create an ‘accurate’ range utilizing as much of the GBIF data as is appropriate, the person must follow the following steps.  Lets assume they map they wish to create for C. cyaneus is the concept according to the latest IOC checklist. 
+To create an ‘accurate’ range utilizing as much of the GBIF data as is appropriate, the person must follow these steps today.  Lets assume the map they wish to create for C. cyaneus is the concept according to the latest IOC checklist. 
 
 1.	Determine what other scientific names have been applied to C. cyaneus
 2.	Download GBIF data for all the possible scientific names. 
-3.	Determine the authority and authority version for each record downloaded (some can be determined for an entire datasource, others can be different within a datasources and other records may not have this information and need to be removed.  
+3.	Determine the authority and authority version for each record downloaded (some can be determined for an entire datasource, others can be different within a datasources and many records may not have this information and need to be removed.  
 4.	 For every single authority and authority version (which may be 100s), determine if the concept for each record is congruent to the latest IOC concept.  This step requires a DEEP understanding of every authority and how it has applied names to concepts and how those have changed from version to version.
 5.	Remove all records that cannot be accurately applied to the latest IOC concept of C. cyaneus.    
 6.	Create the map.  
 
-While this is an obvious case where the taxonomic concepts are so different that the ‘oddity’ in the data should be noticed, there are many examples similar to _Circus cyaneus_ where the geographic differences are much more subtle.
+While this is an obvious case where the taxonomic concepts are so different that the ‘oddity’ in the data should be noticed by non-taxonomists, there are many examples similar to _Circus cyaneus_ where the geographic differences are much more subtle.
 
 ### World Flora Online — @WUlate, 18 Jun. 2020
 
