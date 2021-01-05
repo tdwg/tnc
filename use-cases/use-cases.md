@@ -54,14 +54,14 @@ To fulfill these use cases, we'd need to be able to answer several of the questi
 
 I don't know if this is the right strategy to identify how best to proceed on this discussion and its desired outcome, but it seems to me that enumerating questions of this sort both builds the foundations for addressing Use Cases (or, perhaps, enumerating the Use Cases allow us to figure out what questions we need to answer to fulfill them), and allows us to be more specific about what entities we need to define, and what properties for each entity we need to capture.
 
-### @jgerbracht, 18 Sep. 2018
+## @jgerbracht, 18 Sep. 2018
 
 Some more Use Cases
 
 As a data consolidator.
-- Do these 2 pieces of information, from different data providers, refer to the same Taxonomic Concept?
-- What is the name for this Taxon Concept given an authority/publish date?
-- I want to 'discover' and access datasets which unambiguously refer to a specific Taxonomic Concept. i.e. H. sapiens which includes neanderthalensis vs excludes neanderthalensis
+- Do these 2 pieces of information, from different data providers, refer to the same circumscribed taxon. (Taxonomic Concept)?
+- What is the name for this Taxon given an authority/publish date?
+- I want to 'discover' and access datasets which unambiguously refer to a specific circumscribed taxon. i.e. H. sapiens which includes neanderthalensis vs excludes neanderthalensis
 
 As a data provider
 - Publish taxon related data, such as observations, which are not easily misunderstood or misapplied. i.e. I want to publish my data so that it's difficult to inappropriately consolidate with other datasets based on differing taxon concepts.
@@ -72,9 +72,9 @@ As a taxonomy publisher
 - I need to publish the 'Clements' checklist with Taxon Concept identifiers and provide a persistent landing page for TC definitions.
 - As Taxon Concepts become obsolete, I need to still provide the basic information of a concept, i.e. TNU and circumscription.
 
-### @jliljeblad, 17 Jun. 2020
+## @jliljeblad, 17 Jun. 2020
 
-#### Problems
+### Problems
 
 Several systems/databases which have been invested in extensively and we do not want to abandon. Some are global and need to be managed in a larger context. Others are regional and have both national funding and cover special national needs (legislation, etc.). How can we continue regionally and at the same time pool our resources and share data, both to humans as well as machines (automatically)?
 
@@ -82,7 +82,7 @@ Several systems/databases which have been invested in extensively and we do not 
 - Well defined and finalized standard. Can be strongly validated. Not a moving target.
 - Not embraced by major players like GBIF and EOL.
 
-#### General use cases
+### General use cases
 - Contribute to an Extended Catalogue of Life when building a taxonomic backbone
   - CoL+ project interprets some checklists and builds one taxonomic backbone to which all checklists can be mapped
 - Access taxonomic information about “the same” taxon in other systems/databases, both by humans and machines
@@ -107,15 +107,15 @@ Several systems/databases which have been invested in extensively and we do not 
   -	Taxonomic status (consensus)
   -	Tracking changes of all of the above properties
 
-#### Real world use cases
+### Real world use cases
 
 - It must be possible to use the standard for both name based and taxon based checklists without any major issues. For the majority (?) of lists the name hasn’t changed, so an identifier based on the name is stable for now.
 - Possible to track historical changes using statuses and time stamps.
 Not only RCC5 relationships but also add in a directionality. A has been replaced by B, which is otherwise congruent A=B. A and B has been merged into C, which represents an extended concept = includes A and B.
 
-### GBIF Range Map, @jgerbracht, 17 Jun. 2020
+## GBIF Range Map, @jgerbracht, 17 Jun. 2020
 
-Using GBIF data to generate accurate range maps of a species when the players involved are not taxonomic experts.  Somehow, the GBIF datasets, from multiple sources), must include enough information about the taxonomic concept for each ‘observation’ so that each GBIF record, regardless of datasource, can be reliably combined with all other records which refer to the same taxonomic concept by non-taxonomists.  Unfortunately, names are all to commonly used to combine these data.    
+Using GBIF data to generate accurate range maps of a species when the people involved are not taxonomic experts.  Somehow, the GBIF datasets (from multiple sources) must include enough information about the taxon for each ‘observation’ so that each GBIF record, regardless of datasource, can be reliably combined with all other records which refer to the exact same circumscribed taxon and be completed accurately by non-taxonomists.  Unfortunately, names are all to commonly used to combine these data.    
 
 Download all GBIF data for _Circus cyaneus_
 - Download includes over 31,000 records from eBird which all occur in Europe and Asia and 1 North American record.   
@@ -125,18 +125,18 @@ Use these downloaded data to generate a range map for _Circus cyaneus_
 
 Unless the person creating the maps understands the taxonomic history of which concepts have had the name _Circus cyaneus_ applied to them, they will generate a range map based on the combination of multiple taxonomic concepts believing they are generating a map for a single taxonomic concept.   
 
-To create an ‘accurate’ range utilizing as much of the GBIF data as is appropriate, the person must follow the following steps.  Lets assume they map they wish to create for C. cyaneus is the concept according to the latest IOC checklist. 
+To create an ‘accurate’ range utilizing as much of the GBIF data as is appropriate, the person must follow these steps today.  Lets assume the map they wish to create for C. cyaneus is the concept according to the latest IOC checklist. 
 
 1.	Determine what other scientific names have been applied to C. cyaneus
 2.	Download GBIF data for all the possible scientific names. 
-3.	Determine the authority and authority version for each record downloaded (some can be determined for an entire datasource, others can be different within a datasources and other records may not have this information and need to be removed.  
+3.	Determine the authority and authority version for each record downloaded (some can be determined for an entire datasource, others can be different within a datasources and many records may not have this information and need to be removed.  
 4.	 For every single authority and authority version (which may be 100s), determine if the concept for each record is congruent to the latest IOC concept.  This step requires a DEEP understanding of every authority and how it has applied names to concepts and how those have changed from version to version.
 5.	Remove all records that cannot be accurately applied to the latest IOC concept of C. cyaneus.    
 6.	Create the map.  
 
-While this is an obvious case where the taxonomic concepts are so different that the ‘oddity’ in the data should be noticed, there are many examples similar to _Circus cyaneus_ where the geographic differences are much more subtle.
+While this is an obvious case where the taxonomic concepts are so different that the ‘oddity’ in the data should be noticed by non-taxonomists, there are many examples similar to _Circus cyaneus_ where the geographic differences are much more subtle.
 
-### World Flora Online — @WUlate, 18 Jun. 2020
+## World Flora Online — @WUlate, 18 Jun. 2020
 
 1.  The World Flora Online (WFO) handles a consensus Taxonomy and requires an exchange format that allows them to receive new information on endemic plants from different providers.  For example: the National Species List (NSL) Infrastructure from Australia, the Brazilian Flora 2020, the Catalogue of Madagascar, the Flora de Colombia, etc..
 
@@ -147,7 +147,7 @@ While this is an obvious case where the taxonomic concepts are so different that
 
 3.  William would like to make the species descriptive information from the World Flora Online (WFO) using the Plinian Core unratified TDWG standard (as soon as it gets ratified) which currently borrows terms from the TCS Standard and needs to be updated to use the new (TCS 2.0) corresponding IRIs to update it.
 
-### Use case - ASU BioKIC, @jar398, 18 Jun. 2020
+## Use case - ASU BioKIC, @jar398, 18 Jun. 2020
 
 In brief, the Automated Taxonomic Concept Reasoning and Learning (ATCRL) project at the ASU Biodiversity Knowledge Integration Center (BioKIC) is working on tools that operate on alignments between checklists (or between checklists and taxonomies, or between taxonomies). An alignment is essentially a set of RCC-5 articulations between the entries in the respective checklists. The tools generate, reason about, and report on checklist alignments. They therefore require an interchange format for alignments.
 
@@ -161,7 +161,7 @@ TBD: Figure out whether/why TCS 1.0 fails for this application. …
 
 TBD: Figure out whether this use case is covered under the TNC interest group and the nascent task group, or if it is something different
 
-### @afuchs1, 24 Jun. 2020
+## @afuchs1, 24 Jun. 2020
 Use Cases - Australian National Species List
 
 As a data consolidator:
@@ -182,7 +182,29 @@ The classification name, classification according to, the version of the classif
 -- The taxonomic name (with and without authorship), the taxonomic work accepted by this classification,  concepts within the classification and their rank, a citable link to the accepted taxon concept within the classification, a link to the protologue, placement of the taxon concept in the classification, synonyms of the taxonomic name, according to, 
 - I want to deliver the differences between one published version of an accepted classification and another so that consumers can apply the differences (WA census requirement)
 
+## @camwebb 
 
+(From [Problems](https://docs.google.com/document/d/100_8CFy5EV83Nx0aMS9szLJzfhUlWDu53Uvv7556DgA) document, 2020-06-16:)
 
+Sharing i) basic occurrence data that includes specified taxon concepts (name + accordingto), and ii) RCC-5 relationships among taxon concepts, for tree species in Indonesia, and plants of Alaska, as RDF and as DwCA. Exporting from local databases, and eventually from (and into) Arctos. (Arctos now has a TaxonConcept table.)
 
+(From [Use cases](https://docs.google.com/document/d/1tXEW-tCOgvR4lhNW_EJn2iSqJzkyJWYoGGpDASkLA8o) document, 2020-04-07:)
+
+**Writers of taxonomic treatments**
+
+_Populating taxonomists’ data platforms with existing taxon usages_
+
+During the preparation of a taxonomic treatment much time is spent discovering, interpreting and organizing pre-existing usages of taxonomic names. If the publishers of primary name data (e.g., IPNI) and taxonomic journals made name and name usage data available in a standardized form, and if a taxonomist organizes data using a digital platform (e.g., Scratchpads) that can import these usage data, then much time could be saved, prior to actually considering the specimens and deciding on new usages of names.  
+
+_Standardizing the output of taxonomic decisions on prior concepts and circumscriptions of taxa_
+
+This was perhaps the main use case for the 2005 Taxonomic Concept Transfer Schema (TCS). Taxonomists are the primary creators of taxonomic concepts and mappings of existing concepts to their new concepts, and if this information can be published losslessly at the source, then checklist makers and names aggregators can easily include comprehensive metadata for the names they include. Publishing platforms that permit authors to add metadata as they write and then publish these metadata in open formats (such as the Pensoft ecosystem) could theoretically generate standardized taxon name usage data for all their publications.
+
+**Compilers of checklists**
+
+While checklist creators are generally not promoting new taxon concepts or circumscriptions, they are concerned that the names chosen for a checklist represent comprehensive and non-overlapping concepts for the biological variation covered in the checklist. Using names with explicit ‘according to’ statements makes it easier to alleviate this concern. Additionally, providing mappings of common pre-existing usages (e.g., in other checklists and floras) to the chosen usage in the checklist will assist users of the checklist to reconcile their understandings of a taxon to the names chosen for the checklist.
+
+**Determiners of specimens or observations**
+
+What if public occurrence and specimen determination platforms (e.g., iNaturalist) served taxon name usage data for each name that a determiner can choose among? And if the platforms then permitted an ‘according to’ statement to be attached to the use of each name. These full taxon name usage statements could then percolate through to aggregators (e.g., GBIF), via the exchange of standard taxon name usage statements. Simply offering an ‘according to’ field on determination forms could eventually have a large impact on the way that the naturalist public conceive of taxonomic names.
 
