@@ -38,15 +38,15 @@ The intended outcome is a TDWG standard for exchange of taxonomic and nomenclatu
 
 ### 6. Strategy and/or framework
 
-The organisational and procedural framework for developing and ratifying TDWG standards is specified by the ratification process given in the TDWG Process.
+The framework for for revisions to existing TDWG standards is provided by the Vocabularey Maintenance Specification.
 
-The Term list document that resulted from the review of TCS 1.1 and other relevant specifications that took place between TDWG 2018 and TDWG 2019 will form the basis for version 2 of TCS. Some refinement will be necessary, but significant changes or additions are out of scope. The task group will further triage by focusing on terms and controlled vocabularies that are necessary and/or straightforward. Terms and/or controlled vocabularies for which use cases are not clear yet, but that are likely to require a lot of time from the task group, will be marked as potential future enhancements to the standard at the discretion of the maintenance group.
+The Term list document that resulted from the review of TCS 1.1 and other relevant specifications that took place between TDWG 2018 and TDWG 2019 will form the basis for version 2 of TCS. Some refinement will be necessary, but significant changes or additions are out of scope. The one exception is that the Reference object will be fleshed out with properties (mostly) borrowed from other standards, as this is deemed essential to the usability of the standard. The task group will further triage by focusing on terms and controlled vocabularies that are necessary and/or straightforward. Terms and/or controlled vocabularies for which use cases are not clear yet, but that are likely to require a lot of time from the task group, will be marked as potential future enhancements to the standard at the discretion of the maintenance group.
 
-Following the lead of the Collection Description and Attribution interest groups, GitHub issues have been created for all terms and project boards have been created for classes and controlled vocabularies. The intention is to have a master document (or documents) and move issues across the boards via commits to the master document.
+Following the lead of the Collection Description and Attribution interest groups, GitHub issues have been created for all terms and project boards have been created for classes and controlled vocabularies. The intention is to have a master document (or documents) and move issues across the boards via commits to the master document. The task group will have monthly meetings.
 
-We intend to invite feedback from important stakeholders like Catalogue of Life and Plazi at various times during the development of the specification, possibly by inviting them to review pull requests. This is separate from the expert review that is part of the TDWG process for ratification of standards.
+We intend to invite feedback from important stakeholders like Catalogue of Life and Plazi at various times during the development of the specification, possibly by inviting them to review pull requests. This is separate from the expert review that is part of the TDWG process for ratification of standards and changes to standards.
 
-We expect that it will take the task group 12 months to complete the specification and another six months to complete the additional documentation.
+We aim to complete the specification by TDWG 2021 at the end of September and the entire standard including additional documentation well before TDWG 2022.
 
 ### 7. Becoming involved
 
