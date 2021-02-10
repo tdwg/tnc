@@ -15,6 +15,7 @@ Niels Klazenga – Royal Botanic Gardens Victoria / Atlas of Living Australia
 - Jeff Gerbracht – Cornell Lab of Ornithology
 - Greg Whitbread – Taxamatics
 - William Ulate – Missouri Botanical Garden
+- Anne Fuchs - Centre for Australian National Biodiversity Research
 
 ### 4. Motivation and scope
 
