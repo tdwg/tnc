@@ -39,7 +39,7 @@ The intended outcome is a TDWG standard for exchange of taxonomic and nomenclatu
 
 ### 6. Strategy and/or framework
 
-The framework for for revisions to existing TDWG standards is provided by the Vocabulary Maintenance Specification.
+The framework for revisions to existing TDWG standards is provided by the Vocabulary Maintenance Specification.
 
 The Term list document that resulted from the review of TCS 1.1 and other relevant specifications that took place between TDWG 2018 and TDWG 2019 will form the basis for version 2 of TCS. Some refinement will be necessary, but significant changes or additions are out of scope. The one exception is that the Reference object will be fleshed out with properties (mostly) borrowed from other standards, as this is deemed essential to the usability of the standard. The task group will further triage by focusing on terms and controlled vocabularies that are necessary and/or straightforward. Terms and/or controlled vocabularies for which use cases are not clear yet, but that are likely to require a lot of time from the task group, will be marked as potential future enhancements to the standard at the discretion of the maintenance group.
 
