@@ -15,6 +15,7 @@ Niels Klazenga – Royal Botanic Gardens Victoria / Atlas of Living Australia
 - Jeff Gerbracht – Cornell Lab of Ornithology
 - Greg Whitbread – Taxamatics
 - William Ulate – Missouri Botanical Garden
+- Anne Fuchs - Centre for Australian National Biodiversity Research
 
 ### 4. Motivation and scope
 
@@ -38,15 +39,15 @@ The intended outcome is a TDWG standard for exchange of taxonomic and nomenclatu
 
 ### 6. Strategy and/or framework
 
-The organisational and procedural framework for developing and ratifying TDWG standards is specified by the ratification process given in the TDWG Process.
+The framework for revisions to existing TDWG standards is provided by the Vocabulary Maintenance Specification.
 
-The Term list document that resulted from the review of TCS 1.1 and other relevant specifications that took place between TDWG 2018 and TDWG 2019 will form the basis for version 2 of TCS. Some refinement will be necessary, but significant changes or additions are out of scope. The task group will further focus on terms and controlled vocabularies that are necessary and/or straightforward. Terms and/or controlled vocabularies for which use cases are not clear yet, but that are likely to require a lot of time from the task group, will be marked as potential future enhancements to the standard at the discretion of the maintenance group.
+The Term list document that resulted from the review of TCS 1.1 and other relevant specifications that took place between TDWG 2018 and TDWG 2019 will form the basis for version 2 of TCS. Some refinement will be necessary, but significant changes or additions are out of scope. The one exception is that the Reference object will be fleshed out with properties (mostly) borrowed from other standards, as this is deemed essential to the usability of the standard. The task group will further triage by focusing on terms and controlled vocabularies that are necessary and/or straightforward. Terms and/or controlled vocabularies for which use cases are not clear yet, but that are likely to require a lot of time from the task group, will be marked as potential future enhancements to the standard at the discretion of the maintenance group.
 
-Following the lead of the Collection Description and Attribution interest groups, GitHub issues have been created for all terms and project boards have been created classes and controlled vocabularies. The intention is to have a master document (or documents) and move issues across the boards via commits to the master document.
+Following the lead of the Collection Description and Attribution interest groups, GitHub issues have been created for all terms and project boards have been created for classes and controlled vocabularies. The intention is to have a master document (or documents) and move issues across the boards via commits to the master document. The task group will have monthly meetings.
 
-We intend to invite feedback from important stakeholders like Catalogue of Life and Plazi at various times during the development of the specification, possibly by inviting them to review pull requests. This is separate from the expert review that is part of the TDWG process for ratification of standards.
+We intend to invite feedback from important stakeholders like Catalogue of Life and Plazi at various times during the development of the specification, possibly by inviting them to review pull requests. This is separate from the expert review that is part of the TDWG process for ratification of standards and changes to standards.
 
-We expect that it will take the task group 12 months to complete the specification and another six months to complete the additional documentation.
+We aim to complete the specification by TDWG 2021 at the end of September and the entire standard including additional documentation well before TDWG 2022.
 
 ### 7. Becoming involved
 
@@ -54,7 +55,7 @@ All the work of the task group will take place in the TNC GitHub repository and 
 
 ### 8. History/context
 
-The Taxon Concept Schema (TCS) was developed by the then Taxon Names and Concepts subgroup of TDWG and was ratified at TDWG 2005 in Saint Petersburg and released as TDS 1.01. Like its contemporaries, the Access to Biological Collections Data (ABCD) and Structured Descriptive Data (SDD) standards, TCS is an XML Schema and has not kept up with changing requirements for TDWG standards. In 2009, TDWG ratified the Darwin Core standard, which is a vocabulary of terms and definitions and therefore much more flexible than TCS. Darwin Core has a Taxon class, which is now widely used for the exchange of taxonomic data, for which TCS was made, but which has its shortcomings as well. At the Taxon Names and Concepts interest group (TNC) workshop at TDWG 2018 in Dunedin, it was decided that the TNC should undertake a revision of TCS. Between TDWG 2018 and TDWG 2019, the TNC did a review of TCS, also looking at the Darwin Core Taxon class, the TDWG Taxon Name and Taxon Concept LSID Ontologies, as well as other specifications, which resulted in a working document that will form the basis for this task group’s work.
+The Taxon Concept Schema (TCS) was developed by the then Taxon Names and Concepts subgroup of TDWG and was ratified at TDWG 2005 in Saint Petersburg and released as TCS 1.01. Like its contemporaries, the Access to Biological Collections Data (ABCD) and Structured Descriptive Data (SDD) standards, TCS is an XML Schema and has not kept up with changing requirements for TDWG standards. In 2009, TDWG ratified the Darwin Core standard, which is a vocabulary of terms and definitions and therefore much more flexible than TCS. Darwin Core has a Taxon class, which is now widely used for the exchange of taxonomic data, for which TCS was made, but which has its shortcomings as well. At the Taxon Names and Concepts interest group (TNC) workshop at TDWG 2018 in Dunedin, it was decided that the TNC should undertake a revision of TCS. Between TDWG 2018 and TDWG 2019, the TNC did a review of TCS, also looking at the Darwin Core Taxon class, the TDWG Taxon Name and Taxon Concept LSID Ontologies, as well as other specifications, which resulted in a working document that will form the basis for this task group’s work.
 
 ### 9. Resources
 
