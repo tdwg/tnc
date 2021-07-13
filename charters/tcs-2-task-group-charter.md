@@ -23,7 +23,7 @@ The purpose-built TDWG standard for exchanging taxonomic data, the [Taxon Concep
 
 Despite its shortcomings, the basic data model of TCS is considered well thought-through and works for many people. The Taxon Name and Taxon Concept parts of the [TDWG LSID Ontology](https://github.com/tdwg/ontology/tree/master/ontology/voc), which are based on TCS, are being used, but are not a standard. We believe that, if we recast TCS to an extensible TDWG vocabulary, according to the Vocabulary Maintenance Specification, it will meet the needs of all use cases and will find wide acceptance.
 
-The focus of the Task Group will be on structure, rather than content. While many terms need better definitions and notes, we do not expect significant changes to the meaning of terms.
+The focus of the Task Group will be on structure, rather than content. While many terms need better definitions and notes, we do not expect significant changes to the meaning of terms or addition of many new terms at this stage.
 
 ### 5. Goals, outputs, and outcomes
 
