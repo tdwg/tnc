@@ -59,7 +59,7 @@ The Taxon Concept Schema (TCS) was developed by the then Taxon Names and Concept
 
 ### 9. Resources
 
-- [Task Group’s GitHub repository](https://github.com/tdwg/tcs2): a new GitHub has been created for the Task Group. The [working document](https://docs.google.com/document/d/1bcfjhh0ztmXKz7P9G0ni7vYZc3MtH4LLxlCZjswF2k4) has been split up in separate issues for each term, so that each term has its own discussion thread. We have also created projects for each class and vocabulary.
+- [Task Group’s GitHub repository](https://github.com/tdwg/tcs2): a new GitHub repository has been created for the Task Group. The [working document](https://docs.google.com/document/d/1bcfjhh0ztmXKz7P9G0ni7vYZc3MtH4LLxlCZjswF2k4) has been split up in separate issues for each term, so that each term has its own discussion thread. We have also created projects for each class and vocabulary.
 - [TNC Interest Group repository](https://github.com/tdwg/tns): discussions in the last three years have mostly taken place in the issues in this repository. If people want to propose new terms that are not in the TCS 2 repository yet, it is best to do that in the TNC repository.
 - [TCS 1 repository](https://github.com/tdwg/tcs): this repository contains the XML Schema, schema documentation and user guide of TCS 1.
 - TDWG [Taxon Name](https://github.com/tdwg/ontology/blob/master/ontology/voc/TaxonName.rdf) and [Taxon Concept](https://github.com/tdwg/ontology/blob/master/ontology/voc/TaxonConcept.rdf) LSID Vocabularies. These ontologies, converted to Turtle, are also available in the [TNC repository](https://github.com/tdwg/tnc/tree/master/tcs-docs).
